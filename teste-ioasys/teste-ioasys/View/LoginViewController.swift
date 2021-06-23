@@ -7,6 +7,7 @@
 
 import UIKit
 import Material
+import SVProgressHUD
 
 //WITH XIB
 //class LoginViewController: UIViewController {
@@ -27,7 +28,8 @@ class LoginViewController: UIViewController {
     var credentialModel: Credential?
     var mainView: LoginView { return self.view as! LoginView}
     let lastFieldTag = 1
-    public var loginViewModel: LoginViewModel = LoginViewModel()
+    public var loginViewModel: LoginViewModel?
+    public var loadingCustom: ActivityIndicatorCustom! = nil
 
     override func loadView() {
         let mainView = LoginView(frame: UIScreen.main.bounds)
@@ -38,7 +40,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         configureTextField()
         configureKeyboard()
-        
+        loginViewModel = LoginViewModel(loginViewController: self)
+        loadingCustom = ActivityIndicatorCustom(viewController: self)
         mainView.buttonSignIn.addTarget(self, action: #selector(signIn), for: .touchUpInside)
     }
     
@@ -66,6 +69,7 @@ class LoginViewController: UIViewController {
                 textField.cleanToEdit()
                 guard let text = textField.text, !text.isEmpty else {
                     textField.setErrorState(message: "Campo obrigatório")
+                    self.loadingCustom.dismiss()
                     return
                 }
             }
@@ -73,6 +77,7 @@ class LoginViewController: UIViewController {
         
         if !isValidEmail(mainView.tfEmail.text!) {
             mainView.tfEmail.setErrorState(message: "Email inválidao")
+            self.loadingCustom.dismiss()
             return
         }
     }
@@ -84,12 +89,15 @@ class LoginViewController: UIViewController {
     }
     
     @objc func signIn(){
-        validateFields()
-        credentialModel = Credential(email: "testeapple@ioasys.com.br", password: "12341234")
+        loadingCustom.show()
+//        validateFields()
         
         //HARDCODE TO TEST
+        credentialModel = Credential(email: "testeapple@ioasys.com.br", password: "12341234")
+        
+        
 //        credentialModel = Credential(email: mainView.tfEmail.text!, password: mainView.tfPassword.text!)
-        loginViewModel.signIn(credential: credentialModel!)
+        loginViewModel?.signIn(credential: credentialModel!)
     }
     
     // MARK: Keyboard Notifications

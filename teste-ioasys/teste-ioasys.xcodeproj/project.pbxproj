@@ -14,6 +14,7 @@
 		4B56925226829FC6003473CB /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56925126829FC6003473CB /* RequestModel.swift */; };
 		4B5692572682AD24003473CB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5692562682AD24003473CB /* LoginResponse.swift */; };
 		4B56928C2682B8CF003473CB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56928B2682B8CF003473CB /* Header.swift */; };
+		4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */; };
 		4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013DF2680D15400F2CB43 /* AppDelegate.swift */; };
 		4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013E12680D15400F2CB43 /* SceneDelegate.swift */; };
 		4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF013E82680D15B00F2CB43 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		4B56925126829FC6003473CB /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		4B5692562682AD24003473CB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4B56928B2682B8CF003473CB /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCustom.swift; sourceTree = "<group>"; };
 		4BF013DC2680D15400F2CB43 /* teste-ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF013DF2680D15400F2CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF013E12680D15400F2CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				4BF014872680F55600F2CB43 /* CustomTextField.swift */,
 				4BF014B026812ABE00F2CB43 /* CodeView.swift */,
 				4BF014D5268141A800F2CB43 /* Utils.swift */,
+				4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */,
 				4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */,
 				4BF014B126812ABE00F2CB43 /* CodeView.swift in Sources */,
+				4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,6 +703,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJCCCJ696L;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Material/Material.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Motion/Motion.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
+					"\"${PODS_ROOT}/\"/**",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/teste-ioasys/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
