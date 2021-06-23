@@ -8,6 +8,7 @@
 import UIKit
 import Material
 
+//WITH XIB
 //class LoginViewController: UIViewController {
 //    @IBOutlet weak var tfEmail: CustomTextField!
 //
@@ -85,6 +86,8 @@ class LoginViewController: UIViewController {
     @objc func signIn(){
         validateFields()
         credentialModel = Credential(email: "testeapple@ioasys.com.br", password: "12341234")
+        
+        //HARDCODE TO TEST
 //        credentialModel = Credential(email: mainView.tfEmail.text!, password: mainView.tfPassword.text!)
         loginViewModel.signIn(credential: credentialModel!)
     }

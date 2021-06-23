@@ -13,6 +13,7 @@
 		4B56924726829858003473CB /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56924626829858003473CB /* Investor.swift */; };
 		4B56925226829FC6003473CB /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56925126829FC6003473CB /* RequestModel.swift */; };
 		4B5692572682AD24003473CB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5692562682AD24003473CB /* LoginResponse.swift */; };
+		4B56928C2682B8CF003473CB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56928B2682B8CF003473CB /* Header.swift */; };
 		4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013DF2680D15400F2CB43 /* AppDelegate.swift */; };
 		4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013E12680D15400F2CB43 /* SceneDelegate.swift */; };
 		4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF013E82680D15B00F2CB43 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		4B56924626829858003473CB /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
 		4B56925126829FC6003473CB /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		4B5692562682AD24003473CB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		4B56928B2682B8CF003473CB /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		4BF013DC2680D15400F2CB43 /* teste-ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF013DF2680D15400F2CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF013E12680D15400F2CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -219,6 +221,7 @@
 				4B56924626829858003473CB /* Investor.swift */,
 				4B56925126829FC6003473CB /* RequestModel.swift */,
 				4B5692562682AD24003473CB /* LoginResponse.swift */,
+				4B56928B2682B8CF003473CB /* Header.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */,
 				4B56923526829323003473CB /* NetworkAPI.swift in Sources */,
 				4B56924726829858003473CB /* Investor.swift in Sources */,
+				4B56928C2682B8CF003473CB /* Header.swift in Sources */,
 				4BF014882680F55600F2CB43 /* CustomTextField.swift in Sources */,
 				4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */,
 				4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */,

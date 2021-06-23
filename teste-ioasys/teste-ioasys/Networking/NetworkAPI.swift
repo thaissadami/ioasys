@@ -16,10 +16,16 @@ public class NetworkAPI {
 //        .init(name: "BundleId", value: Constants.BundleId)
 //    ]
     
-    let headers: HTTPHeaders = [
+    var headers: HTTPHeaders = [
         .authorization(bearerToken: ""),
         .accept("application/json")
     ]
+    
+    public func setHeaders(headers: [Header]){
+        for header in headers {
+            self.headers.add(name: header.key, value: header.value)
+        }
+    }
     
     public func makeRequest(method: HTTPMethod, url:String, parameters: Parameters?){
 
@@ -28,10 +34,6 @@ public class NetworkAPI {
             if let status = response.response?.statusCode {
                 if (status == 200){
                     self.successResult(response: response)
-//                    if case let .success(data) = response.result {
-//
-//                    }
-                    
                 }else{
                     if case let .failure(error) = response.result {
                         self.failure(error:error)
