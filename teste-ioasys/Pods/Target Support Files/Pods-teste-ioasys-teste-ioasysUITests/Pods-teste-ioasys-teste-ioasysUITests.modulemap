@@ -1,6 +1,0 @@
-framework module Pods_teste_ioasys_teste_ioasysUITests {
-  umbrella header "Pods-teste-ioasys-teste-ioasysUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -23,7 +23,9 @@ class LoginViewModel: NetworkAPI{
     }
     
     override func successResult(response:AFDataResponse<Data>) {
+        
         self.loginViewController.loadingCustom.dismiss()
+        
         let jsonData = try! JSON(data:response.data ?? Data())
 
         do {

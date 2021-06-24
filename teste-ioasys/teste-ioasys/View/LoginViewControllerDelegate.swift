@@ -17,10 +17,6 @@ extension LoginViewController: TextFieldDelegate {
         return true
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let tf = textField as! CustomTextField
         

@@ -11,8 +11,6 @@ target 'teste-ioasys' do
   pod 'Material', '~> 2.16.4'
   pod 'Alamofire', '~> 5.4.1'
   pod 'SwiftyJSON', '~> 5.0'
-  pod 'SVProgressHUD', '~> 2.2.5'
-pod 'MBProgressHUD', '~> 1.2'
 
   target 'teste-ioasysTests' do
     inherit! :search_paths
