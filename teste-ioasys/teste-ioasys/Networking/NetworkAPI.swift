@@ -16,10 +16,8 @@ public class NetworkAPI {
 //        .init(name: "BundleId", value: Constants.BundleId)
 //    ]
     
-    var headers: HTTPHeaders = [
-        .authorization(bearerToken: ""),
-        .accept("application/json")
-    ]
+    var headers: HTTPHeaders = [.contentType("application/json")]
+    let baseURL:String = Bundle.main.object(forInfoDictionaryKey: "BaseURL") as! String
     
     public func setHeaders(headers: [Header]){
         for header in headers {
@@ -29,7 +27,10 @@ public class NetworkAPI {
     
     public func makeRequest(method: HTTPMethod, url:String, parameters: Parameters?){
 
-        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseData { response in
+
+        let fullURL = baseURL.appending(url)
+        
+        AF.request(fullURL, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseData { response in
             
             if let status = response.response?.statusCode {
                 if (status == 200){

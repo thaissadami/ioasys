@@ -15,8 +15,23 @@
 		4B5692572682AD24003473CB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5692562682AD24003473CB /* LoginResponse.swift */; };
 		4B56928C2682B8CF003473CB /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56928B2682B8CF003473CB /* Header.swift */; };
 		4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */; };
-		4B95734B2684B6D3007A9517 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95734A2684B6D3007A9517 /* LoginManager.swift */; };
 		4B9573502684B822007A9517 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95734F2684B822007A9517 /* StateManager.swift */; };
+		4B95738C2687CF56007A9517 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95738B2687CF56007A9517 /* SearchViewController.swift */; };
+		4B9573AB2687D521007A9517 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573AA2687D521007A9517 /* SearchView.swift */; };
+		4B9573B02687D5FA007A9517 /* SearchViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573AF2687D5FA007A9517 /* SearchViewControllerDelegate.swift */; };
+		4B9573B82687D9AD007A9517 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573B72687D9AD007A9517 /* SearchViewModel.swift */; };
+		4B9573E72687E86C007A9517 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9573E32687E86C007A9517 /* Rubik-Regular.ttf */; };
+		4B9573E82687E86C007A9517 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9573E42687E86C007A9517 /* Rubik-Bold.ttf */; };
+		4B9573E92687E86C007A9517 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9573E52687E86C007A9517 /* Rubik-Medium.ttf */; };
+		4B9573EA2687E86C007A9517 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9573E62687E86C007A9517 /* Rubik-Light.ttf */; };
+		4B95740B2687EF67007A9517 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95740A2687EF67007A9517 /* ColorExtension.swift */; };
+		4B9574102687F844007A9517 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95740F2687F844007A9517 /* SearchCell.swift */; };
+		4B957417268801F0007A9517 /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B957416268801F0007A9517 /* Enterprise.swift */; };
+		4B95741F26880417007A9517 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95741E26880417007A9517 /* SearchResponse.swift */; };
+		4B95744926881FEF007A9517 /* DetailEnterpriseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95744826881FEF007A9517 /* DetailEnterpriseView.swift */; };
+		4B9574512688200A007A9517 /* DetailEnterpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9574502688200A007A9517 /* DetailEnterpriseViewController.swift */; };
+		4B95745626882355007A9517 /* DetailEnterpriseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95745526882355007A9517 /* DetailEnterpriseViewModel.swift */; };
+		4B95745B2688243B007A9517 /* DetailEnterpriseViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95745A2688243B007A9517 /* DetailEnterpriseViewDelegate.swift */; };
 		4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013DF2680D15400F2CB43 /* AppDelegate.swift */; };
 		4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013E12680D15400F2CB43 /* SceneDelegate.swift */; };
 		4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF013E82680D15B00F2CB43 /* Assets.xcassets */; };
@@ -25,15 +40,10 @@
 		4BF014022680D15B00F2CB43 /* teste_ioasysUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014012680D15B00F2CB43 /* teste_ioasysUITests.swift */; };
 		4BF0141D2680DAC300F2CB43 /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0141C2680DAC300F2CB43 /* Credential.swift */; };
 		4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014352680DC4B00F2CB43 /* LoginViewController.swift */; };
-		4BF014382680DC4B00F2CB43 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BF014362680DC4B00F2CB43 /* LoginViewController.xib */; };
 		4BF014882680F55600F2CB43 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014872680F55600F2CB43 /* CustomTextField.swift */; };
 		4BF014A726810A1F00F2CB43 /* LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014A626810A1F00F2CB43 /* LoginViewControllerDelegate.swift */; };
 		4BF014AC26812A5000F2CB43 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014AB26812A5000F2CB43 /* LoginView.swift */; };
 		4BF014B126812ABE00F2CB43 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014B026812ABE00F2CB43 /* CodeView.swift */; };
-		4BF014CE26813D4E00F2CB43 /* Rubik-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF014CA26813D4D00F2CB43 /* Rubik-Bold.ttf */; };
-		4BF014CF26813D4E00F2CB43 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF014CB26813D4D00F2CB43 /* Rubik-Light.ttf */; };
-		4BF014D026813D4E00F2CB43 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF014CC26813D4D00F2CB43 /* Rubik-Medium.ttf */; };
-		4BF014D126813D4E00F2CB43 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BF014CD26813D4E00F2CB43 /* Rubik-Regular.ttf */; };
 		4BF014D6268141A800F2CB43 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF014D5268141A800F2CB43 /* Utils.swift */; };
 		758B7ED151C59D9999A1B42E /* Pods_teste_ioasys_teste_ioasysUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A889A56002803BF14B397FBF /* Pods_teste_ioasys_teste_ioasysUITests.framework */; };
 		BF06D67EE7BE1F0D689EF68F /* Pods_teste_ioasysTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */; };
@@ -67,8 +77,23 @@
 		4B5692562682AD24003473CB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4B56928B2682B8CF003473CB /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCustom.swift; sourceTree = "<group>"; };
-		4B95734A2684B6D3007A9517 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		4B95734F2684B822007A9517 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		4B95738B2687CF56007A9517 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4B9573AA2687D521007A9517 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4B9573AF2687D5FA007A9517 /* SearchViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerDelegate.swift; sourceTree = "<group>"; };
+		4B9573B72687D9AD007A9517 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4B9573E32687E86C007A9517 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		4B9573E42687E86C007A9517 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
+		4B9573E52687E86C007A9517 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		4B9573E62687E86C007A9517 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		4B95740A2687EF67007A9517 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		4B95740F2687F844007A9517 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		4B957416268801F0007A9517 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
+		4B95741E26880417007A9517 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		4B95744826881FEF007A9517 /* DetailEnterpriseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseView.swift; sourceTree = "<group>"; };
+		4B9574502688200A007A9517 /* DetailEnterpriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseViewController.swift; sourceTree = "<group>"; };
+		4B95745526882355007A9517 /* DetailEnterpriseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseViewModel.swift; sourceTree = "<group>"; };
+		4B95745A2688243B007A9517 /* DetailEnterpriseViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseViewDelegate.swift; sourceTree = "<group>"; };
 		4BF013DC2680D15400F2CB43 /* teste-ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF013DF2680D15400F2CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF013E12680D15400F2CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,15 +108,10 @@
 		4BF014032680D15B00F2CB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BF0141C2680DAC300F2CB43 /* Credential.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		4BF014352680DC4B00F2CB43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4BF014362680DC4B00F2CB43 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		4BF014872680F55600F2CB43 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		4BF014A626810A1F00F2CB43 /* LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4BF014AB26812A5000F2CB43 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4BF014B026812ABE00F2CB43 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
-		4BF014CA26813D4D00F2CB43 /* Rubik-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Bold.ttf"; sourceTree = "<group>"; };
-		4BF014CB26813D4D00F2CB43 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
-		4BF014CC26813D4D00F2CB43 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
-		4BF014CD26813D4E00F2CB43 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
 		4BF014D5268141A800F2CB43 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,10 +160,10 @@
 		4B56922326826AFC003473CB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4BF014CA26813D4D00F2CB43 /* Rubik-Bold.ttf */,
-				4BF014CB26813D4D00F2CB43 /* Rubik-Light.ttf */,
-				4BF014CC26813D4D00F2CB43 /* Rubik-Medium.ttf */,
-				4BF014CD26813D4E00F2CB43 /* Rubik-Regular.ttf */,
+				4B9573E42687E86C007A9517 /* Rubik-Bold.ttf */,
+				4B9573E62687E86C007A9517 /* Rubik-Light.ttf */,
+				4B9573E52687E86C007A9517 /* Rubik-Medium.ttf */,
+				4B9573E32687E86C007A9517 /* Rubik-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -164,8 +184,68 @@
 				4BF014B026812ABE00F2CB43 /* CodeView.swift */,
 				4BF014D5268141A800F2CB43 /* Utils.swift */,
 				4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */,
+				4B95740A2687EF67007A9517 /* ColorExtension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4B9573902687D23D007A9517 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4BF014212680DACA00F2CB43 /* Model */,
+				4B56921A268266C5003473CB /* ViewModel */,
+				4BF0143C2680DC5000F2CB43 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4B95739A2687D3AA007A9517 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				4B957415268801C1007A9517 /* ViewModel */,
+				4B957414268801AD007A9517 /* Model */,
+				4B95739B2687D3B0007A9517 /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		4B95739B2687D3B0007A9517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B9573AF2687D5FA007A9517 /* SearchViewControllerDelegate.swift */,
+				4B95738B2687CF56007A9517 /* SearchViewController.swift */,
+				4B9573AA2687D521007A9517 /* SearchView.swift */,
+				4B95740F2687F844007A9517 /* SearchCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B957414268801AD007A9517 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4B957416268801F0007A9517 /* Enterprise.swift */,
+				4B95741E26880417007A9517 /* SearchResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B957415268801C1007A9517 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B9573B72687D9AD007A9517 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B95743F26880DE1007A9517 /* DetailSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4B95744826881FEF007A9517 /* DetailEnterpriseView.swift */,
+				4B9574502688200A007A9517 /* DetailEnterpriseViewController.swift */,
+				4B95745526882355007A9517 /* DetailEnterpriseViewModel.swift */,
+				4B95745A2688243B007A9517 /* DetailEnterpriseViewDelegate.swift */,
+			);
+			path = DetailSearch;
 			sourceTree = "<group>";
 		};
 		4BF013D32680D15400F2CB43 = {
@@ -193,12 +273,12 @@
 		4BF013DE2680D15400F2CB43 /* teste-ioasys */ = {
 			isa = PBXGroup;
 			children = (
-				4B56922F268292B3003473CB /* Networking */,
-				4B56921A268266C5003473CB /* ViewModel */,
-				4BF0143C2680DC5000F2CB43 /* View */,
-				4BF014212680DACA00F2CB43 /* Model */,
 				4BF013DF2680D15400F2CB43 /* AppDelegate.swift */,
 				4BF013E12680D15400F2CB43 /* SceneDelegate.swift */,
+				4B95743F26880DE1007A9517 /* DetailSearch */,
+				4B95739A2687D3AA007A9517 /* Search */,
+				4B9573902687D23D007A9517 /* Login */,
+				4B56922F268292B3003473CB /* Networking */,
 				4BF0144F2680DEF900F2CB43 /* Resources */,
 			);
 			path = "teste-ioasys";
@@ -229,7 +309,6 @@
 				4B56924626829858003473CB /* Investor.swift */,
 				4B56925126829FC6003473CB /* RequestModel.swift */,
 				4B5692562682AD24003473CB /* LoginResponse.swift */,
-				4B95734A2684B6D3007A9517 /* LoginManager.swift */,
 				4B95734F2684B822007A9517 /* StateManager.swift */,
 			);
 			path = Model;
@@ -240,7 +319,6 @@
 			children = (
 				4BF014A626810A1F00F2CB43 /* LoginViewControllerDelegate.swift */,
 				4BF014352680DC4B00F2CB43 /* LoginViewController.swift */,
-				4BF014362680DC4B00F2CB43 /* LoginViewController.xib */,
 				4BF014AB26812A5000F2CB43 /* LoginView.swift */,
 			);
 			path = View;
@@ -390,12 +468,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF013EC2680D15B00F2CB43 /* LaunchScreen.storyboard in Resources */,
-				4BF014D126813D4E00F2CB43 /* Rubik-Regular.ttf in Resources */,
-				4BF014CE26813D4E00F2CB43 /* Rubik-Bold.ttf in Resources */,
-				4BF014CF26813D4E00F2CB43 /* Rubik-Light.ttf in Resources */,
-				4BF014D026813D4E00F2CB43 /* Rubik-Medium.ttf in Resources */,
+				4B9573EA2687E86C007A9517 /* Rubik-Light.ttf in Resources */,
+				4B9573E82687E86C007A9517 /* Rubik-Bold.ttf in Resources */,
+				4B9573E72687E86C007A9517 /* Rubik-Regular.ttf in Resources */,
 				4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */,
-				4BF014382680DC4B00F2CB43 /* LoginViewController.xib in Resources */,
+				4B9573E92687E86C007A9517 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,23 +601,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF0141D2680DAC300F2CB43 /* Credential.swift in Sources */,
+				4B95741F26880417007A9517 /* SearchResponse.swift in Sources */,
+				4B95745626882355007A9517 /* DetailEnterpriseViewModel.swift in Sources */,
+				4B9573AB2687D521007A9517 /* SearchView.swift in Sources */,
 				4BF014AC26812A5000F2CB43 /* LoginView.swift in Sources */,
 				4B56925226829FC6003473CB /* RequestModel.swift in Sources */,
+				4B957417268801F0007A9517 /* Enterprise.swift in Sources */,
 				4BF014D6268141A800F2CB43 /* Utils.swift in Sources */,
 				4B5692572682AD24003473CB /* LoginResponse.swift in Sources */,
-				4B95734B2684B6D3007A9517 /* LoginManager.swift in Sources */,
+				4B95744926881FEF007A9517 /* DetailEnterpriseView.swift in Sources */,
 				4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */,
 				4BF014A726810A1F00F2CB43 /* LoginViewControllerDelegate.swift in Sources */,
+				4B95745B2688243B007A9517 /* DetailEnterpriseViewDelegate.swift in Sources */,
 				4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */,
+				4B95740B2687EF67007A9517 /* ColorExtension.swift in Sources */,
+				4B9573B02687D5FA007A9517 /* SearchViewControllerDelegate.swift in Sources */,
+				4B95738C2687CF56007A9517 /* SearchViewController.swift in Sources */,
 				4B9573502684B822007A9517 /* StateManager.swift in Sources */,
 				4B56923526829323003473CB /* NetworkAPI.swift in Sources */,
 				4B56924726829858003473CB /* Investor.swift in Sources */,
 				4B56928C2682B8CF003473CB /* Header.swift in Sources */,
+				4B9573B82687D9AD007A9517 /* SearchViewModel.swift in Sources */,
 				4BF014882680F55600F2CB43 /* CustomTextField.swift in Sources */,
 				4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */,
 				4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */,
 				4BF014B126812ABE00F2CB43 /* CodeView.swift in Sources */,
 				4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */,
+				4B9574102687F844007A9517 /* SearchCell.swift in Sources */,
+				4B9574512688200A007A9517 /* DetailEnterpriseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

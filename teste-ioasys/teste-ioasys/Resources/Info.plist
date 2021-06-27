@@ -66,6 +66,6 @@
 		<string>Rubik-Regular.tff</string>
 	</array>
 	<key>BaseURL</key>
-	<string>https://empresas.ioasys.com.br/api/v1/</string>
+	<string>https://empresas.ioasys.com.br</string>
 </dict>
 </plist>

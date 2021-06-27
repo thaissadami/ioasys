@@ -24,9 +24,9 @@ class CustomTextField: TextField {
 //    }
     
     func setTheme(){
-        self.backgroundColor = UIColor(red: 245/255.0, green: 245/255.0, blue: 245/255.0, alpha: 1)
-        placeholderNormalColor = UIColor(red: 102/255.0, green: 102/255.0, blue: 102/255.0, alpha: 1)
-        placeholderActiveColor = UIColor(named: "primaryColor")!
+        self.backgroundColor = UIColor.grayLight
+        placeholderNormalColor = UIColor.grayDark
+        placeholderActiveColor = UIColor.primary
         dividerActiveHeight = 0
         dividerNormalHeight = 0
         leftViewOffset = 15
@@ -36,12 +36,12 @@ class CustomTextField: TextField {
         frame.size.height = 48
         self.frame = frame
         self.detailVerticalOffset = 4
-        self.borderColor = UIColor(red: 224/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1)
+        self.borderColor = .red
         self.detailLabel.textAlignment = NSTextAlignment(rawValue: 2)!
-        self.detailColor = UIColor(red: 224/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1)
-        self.font = UIFont(name: "Rubik Light", size: 16)
+        self.detailColor = .red
+        self.font = Utils.fontLight(size:16)
 
-        placeholderLabel.font = UIFont(name: "Rubik Regular", size: 14)
+        placeholderLabel.font = Utils.font(size:14)
     }
     
     public func setErrorState(message: String){
