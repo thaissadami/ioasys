@@ -23,16 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "920A3CB2-8CEC-4DBF-9A69-FD53B0EC73D3"
+            uuid = "6B835519-6C34-453E-957E-CF43F6BFE24B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "teste-ioasys/Search/View/SearchViewControllerDelegate.swift"
+            filePath = "teste-ioasys/DetailSearch/DetailEnterpriseViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "tableView(_:didSelectRowAt:)"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "successResult(response:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
