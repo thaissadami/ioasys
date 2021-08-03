@@ -7,6 +7,7 @@
 
 import Foundation
 import SnapKit
+import UIKit
 
 class SearchView: UIView, CodeView {
 

@@ -3,16 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49727B0F594FBCC7D59DB34B /* Pods_teste_ioasys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */; };
 		4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56921B268266D4003473CB /* LoginViewModel.swift */; };
 		4B56923526829323003473CB /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56923426829323003473CB /* NetworkAPI.swift */; };
 		4B56924726829858003473CB /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56924626829858003473CB /* Investor.swift */; };
 		4B56925226829FC6003473CB /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56925126829FC6003473CB /* RequestModel.swift */; };
 		4B5692572682AD24003473CB /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5692562682AD24003473CB /* LoginResponse.swift */; };
+		4B8B504B26B984F10078A739 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8B504A26B984F10078A739 /* SnapKit */; };
+		4B8B504E26B985160078A739 /* Material in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8B504D26B985160078A739 /* Material */; };
+		4B8B505126B9852D0078A739 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8B505026B9852D0078A739 /* Alamofire */; };
+		4B8B505426B9853A0078A739 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8B505326B9853A0078A739 /* SwiftyJSON */; };
+		4B8B505726B985560078A739 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B8B505626B985560078A739 /* SDWebImage */; };
 		4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */; };
 		4B9573502684B822007A9517 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95734F2684B822007A9517 /* StateManager.swift */; };
 		4B95738C2687CF56007A9517 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B95738B2687CF56007A9517 /* SearchViewController.swift */; };
@@ -72,14 +76,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasysTests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasysTests/Pods-teste-ioasysTests.debug.xcconfig"; sourceTree = "<group>"; };
 		10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B56921B268266D4003473CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4B56923426829323003473CB /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4B56924626829858003473CB /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
 		4B56925126829FC6003473CB /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		4B5692562682AD24003473CB /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		4B8B505826B987030078A739 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4B9573412683E376007A9517 /* ActivityIndicatorCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorCustom.swift; sourceTree = "<group>"; };
 		4B95734F2684B822007A9517 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		4B95738B2687CF56007A9517 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -122,11 +125,7 @@
 		4BF014B026812ABE00F2CB43 /* CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
 		4BF014D5268141A800F2CB43 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; sourceTree = "<group>"; };
-		75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys.release.xcconfig"; sourceTree = "<group>"; };
-		A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys.debug.xcconfig"; sourceTree = "<group>"; };
 		A889A56002803BF14B397FBF /* Pods_teste_ioasys_teste_ioasysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasys_teste_ioasysUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasysTests.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasysTests/Pods-teste-ioasysTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49727B0F594FBCC7D59DB34B /* Pods_teste_ioasys.framework in Frameworks */,
+				4B8B505126B9852D0078A739 /* Alamofire in Frameworks */,
+				4B8B504B26B984F10078A739 /* SnapKit in Frameworks */,
+				4B8B505426B9853A0078A739 /* SwiftyJSON in Frameworks */,
+				4B8B504E26B985160078A739 /* Material in Frameworks */,
+				4B8B505726B985560078A739 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +327,6 @@
 			children = (
 				4BF013DE2680D15400F2CB43 /* teste-ioasys */,
 				4BF013DD2680D15400F2CB43 /* Products */,
-				F3B9EF84721FB38A0175F01A /* Pods */,
 				EA9819CADD58148973638864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -390,24 +392,12 @@
 		EA9819CADD58148973638864 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B8B505826B987030078A739 /* UIKit.framework */,
 				10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */,
 				A889A56002803BF14B397FBF /* Pods_teste_ioasys_teste_ioasysUITests.framework */,
 				562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3B9EF84721FB38A0175F01A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */,
-				75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */,
-				03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */,
-				567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */,
-				05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */,
-				B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,17 +407,22 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4BF014062680D15B00F2CB43 /* Build configuration list for PBXNativeTarget "teste-ioasys" */;
 			buildPhases = (
-				CD613ECCD9888E3DF7E89572 /* [CP] Check Pods Manifest.lock */,
 				4BF013D82680D15400F2CB43 /* Sources */,
 				4BF013D92680D15400F2CB43 /* Frameworks */,
 				4BF013DA2680D15400F2CB43 /* Resources */,
-				519224A2DB715822378B5C91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "teste-ioasys";
+			packageProductDependencies = (
+				4B8B504A26B984F10078A739 /* SnapKit */,
+				4B8B504D26B985160078A739 /* Material */,
+				4B8B505026B9852D0078A739 /* Alamofire */,
+				4B8B505326B9853A0078A739 /* SwiftyJSON */,
+				4B8B505626B985560078A739 /* SDWebImage */,
+			);
 			productName = "teste-ioasys";
 			productReference = 4BF013DC2680D15400F2CB43 /* teste-ioasys.app */;
 			productType = "com.apple.product-type.application";
@@ -502,6 +497,13 @@
 				Base,
 			);
 			mainGroup = 4BF013D32680D15400F2CB43;
+			packageReferences = (
+				4B8B504926B984F10078A739 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				4B8B504C26B985160078A739 /* XCRemoteSwiftPackageReference "Material" */,
+				4B8B504F26B9852D0078A739 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4B8B505226B9853A0078A739 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				4B8B505526B985560078A739 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 4BF013DD2680D15400F2CB43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -544,23 +546,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		519224A2DB715822378B5C91 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5E3C6F6C547708B55CA855B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,28 +601,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-teste-ioasysTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD613ECCD9888E3DF7E89572 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-teste-ioasys-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -849,22 +812,12 @@
 		};
 		4BF014072680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJCCCJ696L;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Material/Material.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Motion/Motion.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyJSON/SwiftyJSON.framework/Headers\"",
-					"\"${PODS_ROOT}/\"/**",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/teste-ioasys/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -879,7 +832,6 @@
 		};
 		4BF014082680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -899,7 +851,6 @@
 		};
 		4BF0140A2680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -922,7 +873,6 @@
 		};
 		4BF0140B2680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -945,7 +895,6 @@
 		};
 		4BF0140D2680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -966,7 +915,6 @@
 		};
 		4BF0140E2680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1025,6 +973,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B8B504926B984F10078A739 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		4B8B504C26B985160078A739 /* XCRemoteSwiftPackageReference "Material" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CosmicMind/Material";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.8;
+			};
+		};
+		4B8B504F26B9852D0078A739 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.3;
+			};
+		};
+		4B8B505226B9853A0078A739 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		4B8B505526B985560078A739 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B8B504A26B984F10078A739 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8B504926B984F10078A739 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		4B8B504D26B985160078A739 /* Material */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8B504C26B985160078A739 /* XCRemoteSwiftPackageReference "Material" */;
+			productName = Material;
+		};
+		4B8B505026B9852D0078A739 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8B504F26B9852D0078A739 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4B8B505326B9853A0078A739 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8B505226B9853A0078A739 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		4B8B505626B985560078A739 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B8B505526B985560078A739 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BF013D42680D15400F2CB43 /* Project object */;
 }

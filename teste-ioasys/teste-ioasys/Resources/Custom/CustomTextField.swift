@@ -7,6 +7,7 @@
 
 import Foundation
 import Material
+import UIKit
 
 class CustomTextField: TextField {
     

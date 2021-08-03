@@ -7,6 +7,7 @@
 
 import Alamofire
 import SwiftyJSON
+import UIKit
 
 class SearchViewModel: NetworkAPI{
     
