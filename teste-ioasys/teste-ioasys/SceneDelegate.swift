@@ -6,28 +6,37 @@
 //
 
 import UIKit
+import Swinject
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var dependencyInjector: DependencyInjector?
+    var assembler: Assembler?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-//        guard let _ = (scene as? UIWindowScene) else { return }
         
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            
-            let loginVC = LoginViewController()
-            let nav = UINavigationController(rootViewController: loginVC)
-            nav.setNavigationBarHidden(true, animated: false)
-            window.rootViewController = nav
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+//        if let windowScene = scene as? UIWindowScene {
+//            let window = UIWindow(windowScene: windowScene)
+//
+//            let loginVC = LoginViewController()
+//            let nav = UINavigationController(rootViewController: loginVC)
+//            nav.setNavigationBarHidden(true, animated: false)
+//            window.rootViewController = nav
+//            self.window = window
+//            window.makeKeyAndVisible()
+        //        }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        dependencyInjector = DependencyInjector(navigationController: UINavigationController())
+        dependencyInjector?.build(completion: { assembler, appCoordinator in
+            self.assembler = assembler
+            window?.makeKeyAndVisible()
+            window?.windowScene = windowScene
+            window?.rootViewController = appCoordinator.navigationController
+            appCoordinator.start()
+        })
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
