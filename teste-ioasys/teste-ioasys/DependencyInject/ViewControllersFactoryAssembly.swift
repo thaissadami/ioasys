@@ -15,7 +15,6 @@ class ViewControllersFactoryAssembly: Assembly {
             return AuthenticationFactoryImplementation(resolver: resolver)
         }
 
-        //MARK: Search Factory
         container.register(SearchFactory.self) { resolver in
             return SearchFactoryImplementation(resolver: resolver)
         }

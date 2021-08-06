@@ -35,7 +35,7 @@ class CoordinatorAssembly: Assembly {
             return authCoordinator
         }
 
-        //MARK: Home Coordinator
+        //MARK: Search Coordinator
         container.register(SearchCoordinator.self) { resolver in
             let searchFactory = resolver.resolveSafe(SearchFactory.self)
             let searchCoordinator = SearchCoordinator(navigationController: appCoordinator.navigationController,

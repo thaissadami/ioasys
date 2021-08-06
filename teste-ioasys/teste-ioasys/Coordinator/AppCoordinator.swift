@@ -47,7 +47,7 @@ extension AppCoordinator: AuthenticationCoordinatorDelegate {
 
 extension AppCoordinator: SearchCoordinatorDelegate {
 
-    func didLogout() {
+    func didShowDetail() {
         #warning("TODO - ")
     }
 }

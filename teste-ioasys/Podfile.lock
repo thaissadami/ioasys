@@ -11,6 +11,7 @@ PODS:
     - SDWebImage/Core (= 5.11.1)
   - SDWebImage/Core (5.11.1)
   - SnapKit (5.0.1)
+  - SwiftLint (0.43.1)
   - SwiftyJSON (5.0.1)
   - Swinject (2.7.1)
   - SwinjectAutoregistration (2.7.0):
@@ -21,6 +22,7 @@ DEPENDENCIES:
   - Material (~> 2.16.4)
   - SDWebImage (~> 5.11)
   - SnapKit (~> 5.0)
+  - SwiftLint
   - SwiftyJSON (~> 5.0)
   - Swinject (~> 2.7.1)
   - SwinjectAutoregistration (~> 2.7.0)
@@ -32,6 +34,7 @@ SPEC REPOS:
     - Motion
     - SDWebImage
     - SnapKit
+    - SwiftLint
     - SwiftyJSON
     - Swinject
     - SwinjectAutoregistration
@@ -42,10 +45,11 @@ SPEC CHECKSUMS:
   Motion: 153ba49692997888556c7a95207278a8b1f8be95
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   SwinjectAutoregistration: 330f5012642a8b5c89a8a4adb0c5e52df07382c0
 
-PODFILE CHECKSUM: 267f0a73a99ae3a2194a21290302d83fdf37cde3
+PODFILE CHECKSUM: 137cfa4ed3a8bdbf114dd0772af657977fd54aa6
 
 COCOAPODS: 1.10.2

@@ -25,7 +25,8 @@ class DependencyInjector {
             ViewControllersFactoryAssembly(),
             CoordinatorAssembly(navigationController: self.navigationController),
             AuthenticationFlowAssembly(),
-            SearchFlowAssembly()
+            SearchFlowAssembly(),
+            DomainAssembly()
         ])
         let appCoordinator = assembler.resolver.resolveSafe(AppCoordinator.self)
         completion(assembler, appCoordinator)

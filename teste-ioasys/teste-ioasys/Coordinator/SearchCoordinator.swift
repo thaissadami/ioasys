@@ -8,7 +8,7 @@
 import UIKit
 
 protocol SearchCoordinatorDelegate: AnyObject {
-    func didLogout()
+    func didShowDetail()
 }
 
 class SearchCoordinator: Coordinator {
