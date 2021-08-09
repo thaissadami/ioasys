@@ -24,9 +24,6 @@
 		4B0B638526BD788500131553 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638426BD788500131553 /* LoginResponse.swift */; };
 		4B0B638826BD78BC00131553 /* AuthRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638726BD78BC00131553 /* AuthRepositoryProtocol.swift */; };
 		4BE928C926C178E400DBAFA7 /* EmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928C826C178E400DBAFA7 /* EmptyValidator.swift */; };
-		4BE928CB26C1943600DBAFA7 /* AuthenticationValidationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928CA26C1943600DBAFA7 /* AuthenticationValidationUseCase.swift */; };
-		4BE928CD26C194BA00DBAFA7 /* AuthenticationValidationUseCaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928CC26C194BA00DBAFA7 /* AuthenticationValidationUseCaseError.swift */; };
-		4BE928D026C1960D00DBAFA7 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928CF26C1960D00DBAFA7 /* Result+Extension.swift */; };
 		4BE928D226C19AF500DBAFA7 /* ContainerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928D126C19AF500DBAFA7 /* ContainerValidator.swift */; };
 		5D51A339C7F81BB34C137930 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2686075E6E633EB5A7733D /* Pods_Domain.framework */; };
 		E3DB7DA4F9B46EC1EE07BF52 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABFD073134411A4BB8BE064 /* Pods_Domain_DomainTests.framework */; };
@@ -63,9 +60,6 @@
 		4B0B638426BD788500131553 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4B0B638726BD78BC00131553 /* AuthRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryProtocol.swift; sourceTree = "<group>"; };
 		4BE928C826C178E400DBAFA7 /* EmptyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyValidator.swift; sourceTree = "<group>"; };
-		4BE928CA26C1943600DBAFA7 /* AuthenticationValidationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationValidationUseCase.swift; sourceTree = "<group>"; };
-		4BE928CC26C194BA00DBAFA7 /* AuthenticationValidationUseCaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationValidationUseCaseError.swift; sourceTree = "<group>"; };
-		4BE928CF26C1960D00DBAFA7 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
 		4BE928D126C19AF500DBAFA7 /* ContainerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerValidator.swift; sourceTree = "<group>"; };
 		7E79A4744DAF497A917594F5 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		7EDD8E4545DC08047BFE0F85 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +113,6 @@
 		4B0B62BB26BC66BC00131553 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				4BE928CE26C195ED00DBAFA7 /* Helpers */,
 				4B0B638626BD78AE00131553 /* Respositories */,
 				4B0B638126BD786E00131553 /* Response */,
 				4B0B62DF26BC6ED500131553 /* Forms */,
@@ -185,8 +178,6 @@
 			children = (
 				4B0B637D26BD782C00131553 /* AuthenticateUseCaseProtocol.swift */,
 				4B0B637F26BD783A00131553 /* AuthenticateUseCase.swift */,
-				4BE928CA26C1943600DBAFA7 /* AuthenticationValidationUseCase.swift */,
-				4BE928CC26C194BA00DBAFA7 /* AuthenticationValidationUseCaseError.swift */,
 			);
 			path = AuthtenticateUseCase;
 			sourceTree = "<group>";
@@ -206,14 +197,6 @@
 				4B0B638726BD78BC00131553 /* AuthRepositoryProtocol.swift */,
 			);
 			path = Respositories;
-			sourceTree = "<group>";
-		};
-		4BE928CE26C195ED00DBAFA7 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				4BE928CF26C1960D00DBAFA7 /* Result+Extension.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D6DACF0E27971823F207D8FD /* Frameworks */ = {
@@ -395,12 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE928CB26C1943600DBAFA7 /* AuthenticationValidationUseCase.swift in Sources */,
-				4BE928D026C1960D00DBAFA7 /* Result+Extension.swift in Sources */,
 				4B0B62ED26BC7AA300131553 /* ResultExtensions.swift in Sources */,
 				4B0B62E726BC7A3D00131553 /* PasswordValidator.swift in Sources */,
 				4BE928D226C19AF500DBAFA7 /* ContainerValidator.swift in Sources */,
-				4BE928CD26C194BA00DBAFA7 /* AuthenticationValidationUseCaseError.swift in Sources */,
 				4B0B62D826BC6D4700131553 /* LoginFormValidateUseCaseError.swift in Sources */,
 				4B0B638826BD78BC00131553 /* AuthRepositoryProtocol.swift in Sources */,
 				4B0B62E526BC790100131553 /* Validatable.swift in Sources */,

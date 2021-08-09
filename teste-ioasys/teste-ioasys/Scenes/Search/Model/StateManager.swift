@@ -4,7 +4,6 @@
 //
 //  Created by Thais Sadami on 24/06/21.
 //
-
 import Foundation
 
 class StateManager: NSObject {

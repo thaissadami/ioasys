@@ -20,7 +20,6 @@ class ContainerValidator {
     init(validators: [Validatable]) {
         self.validators = validators
     }
-
 }
 
 extension ContainerValidator: ContainerValidatable {

@@ -16,11 +16,8 @@ class LoginViewController: UIViewController {
     
     var mainView: LoginView { return self.view as! LoginView}
     private let presenter: LoginViewPresenting
-    
 
-    var credentialModel: Credential?
     let lastFieldTag = 1
-    public var loginViewModel: LoginViewModel?
     var loadingCustom: ActivityIndicatorCustom! = nil
     
     init(presenter: LoginViewPresenting) {
@@ -47,7 +44,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         configureTextField()
         configureKeyboard()
-        loginViewModel = LoginViewModel(viewController: self)
         loadingCustom = ActivityIndicatorCustom(viewController: self)
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
@@ -68,11 +64,6 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-//    func goToSearch(){
-//        let searchViewController = SearchViewController()
-//        self.navigationController?.pushViewController(searchViewController, animated: true)
-//    }
     
     func setFailure(errorMessage: String){
         for view in mainView.containerView.subviews {
@@ -113,14 +104,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginViewDelegate {
 
     func didTapLogin(_ email: String, password: String) {
-        
-        showLoading()
-
         presenter.logIn(email: email, password: password)
-        
-        //OLD
-//        credentialModel = Credential(email: mainView.tfEmail.text!, password: mainView.tfPassword.text!)
-//        loginViewModel?.signIn(credential: credentialModel!)
     }
 }
 
@@ -150,25 +134,18 @@ extension LoginViewController: TextFieldDelegate {
 
 // MARK: LoginViewable
 
-extension LoginViewController: LoginViewable {
+extension LoginViewController: LoginViewable, IndicatorProtocol {
 
     func showLoading() {
-        self.loadingCustom.show()
+        showActivityIndicator(in: self.loadingCustom)
     }
 
     func hideLoading() {
-        self.loadingCustom.dismiss()
+        hideActivityIndicator(in: self.loadingCustom)
     }
 
     func showAlert(message: String) {
+//        presentAttentionAlert(message: message)
+        setFailure(errorMessage: message)
     }
-    
-    func showEmailError(_ message: String) {
-        debugPrint(#function)
-    }
-
-    func showPasswordError(_ message: String) {
-        debugPrint(#function)
-    }
-
 }

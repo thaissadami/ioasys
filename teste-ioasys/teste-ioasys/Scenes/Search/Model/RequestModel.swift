@@ -4,7 +4,6 @@
 //
 //  Created by Thais Sadami on 22/06/21.
 //
-
 import Foundation
 
 public class RequestModel: Codable{
@@ -34,4 +33,3 @@ public class RequestModel: Codable{
         }
     }
 }
-

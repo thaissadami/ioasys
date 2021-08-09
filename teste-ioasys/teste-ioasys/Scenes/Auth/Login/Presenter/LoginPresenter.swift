@@ -13,8 +13,6 @@ import Domain
 protocol LoginViewable: ViewLoadable {
 
     func showAlert(message: String)
-    func showEmailError(_ message: String)
-    func showPasswordError(_ message: String)
 }
 
 protocol LoginSceneCoordinating {
@@ -38,16 +36,15 @@ class LoginPresenter {
     func attach(_ view: LoginViewable) {
         self.view = view
     }
-
 }
 
 extension LoginPresenter: LoginViewPresenting {
 
     func logIn(email: String, password: String) {
-
+        
         let loginForm = LoginForm(email: email, password: password)
         formValidateUseCase.execute(loginForm) { result in
-
+            
             switch result {
             case .success:
                 login(loginForm)
@@ -65,29 +62,35 @@ extension LoginPresenter: LoginViewPresenting {
     private func handleBusinessEmailError(_ error: LoginFormValidateUseCaseError.Email) {
         switch error {
         case .empty:
-            view?.showEmailError("Campo de e-mail vazio")
+            view?.showAlert(message: "Campo de e-mail vazio")
         case .invalid:
-            view?.showEmailError("E-mail inválido")
+            view?.showAlert(message: "E-mail inválido")
         }
     }
 
     private func handleBusinessPasswordError(_ error: LoginFormValidateUseCaseError.Password) {
         switch error {
         case .empty:
-            view?.showPasswordError("Campo de senha vazio")
+            view?.showAlert(message: "Campo de senha vazio")
         case .weak:
-            view?.showPasswordError("Senha fraca :(")
+            view?.showAlert(message: "Senha fraca :(")
         }
     }
     
+    func showSearch(){
+        coordinator.showSearch()
+    }
+    
     private func login(_ form: LoginForm) {
+        self.view?.showLoading()
         authUseCase.execute(form) { [weak self] result in
             guard let self = self else {
                 return
             }
+            self.view?.hideLoading()
             switch result {
             case .success:
-                self.coordinator.showSearch()
+                self.showSearch()
             case .failure(let error):
                 self.view?.showAlert(message: error.localizedDescription)
             }

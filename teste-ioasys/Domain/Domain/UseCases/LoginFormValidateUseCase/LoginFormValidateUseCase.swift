@@ -18,8 +18,9 @@ extension LoginFormValidateUseCase: LoginFormValidateUseCaseProtocol {
     public func execute(_ form: LoginForm, completion: (Result<Void, LoginFormValidateUseCaseError>) -> ()) {
 
         let emailValidator = EmailValidator.input(form.email)
-        let passowordValidator = PasswordValidator.input(form.password)
-        let containerValidator = ContainerValidator(validators: [emailValidator, passowordValidator])
+        let passwordValidator = PasswordValidator.input(form.password)
+        
+        let containerValidator = ContainerValidator(validators: [emailValidator, passwordValidator])
 
         var errors: [LoginFormValidateUseCaseError] = []
 

@@ -1,9 +1,9 @@
 //
 //  Validatable.swift
-//  Domain
+//  Validator
 //
-//  Created by Itamar Silva on 06/08/20.
-//  Copyright © 2020 Itamar Silva. All rights reserved.
+//  Created by Itamar Silva on 05/08/20.
+//  Copyright © 2020 ioasys. All rights reserved.
 //
 
 import Foundation
