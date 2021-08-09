@@ -1,8 +1,9 @@
 //
 //  ContainerValidator.swift
-//  Domain
+//  Validator
 //
-//  Created by Thais Sadami on 05/08/21.
+//  Created by Itamar Silva on 05/08/20.
+//  Copyright © 2020 ioasys. All rights reserved.
 //
 
 import Foundation

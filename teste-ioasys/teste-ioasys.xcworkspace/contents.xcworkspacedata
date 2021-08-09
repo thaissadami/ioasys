@@ -2,10 +2,19 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:teste-ioasys.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Domain/Domain.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:teste-ioasys.xcodeproj">
+      location = "group:Networking/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Storage/Storage.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AppData/AppData.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -2,19 +2,23 @@
 //  DependencyInjector.swift
 //  teste-ioasys
 //
-//  Created by Thais Sadami on 04/08/21.
+//  Created by Itamar Silva on 06/08/20.
+//  Copyright © 2020 Itamar Silva. All rights reserved.
 //
 
 import UIKit
 import Swinject
 import SwinjectAutoregistration
+import OxeNetworking
 
 class DependencyInjector {
 
     private let navigationController: UINavigationController
+    private let environment : Environment
 
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, environment: Environment) {
         self.navigationController = navigationController
+        self.environment = environment
     }
 
 
@@ -26,7 +30,10 @@ class DependencyInjector {
             CoordinatorAssembly(navigationController: self.navigationController),
             AuthenticationFlowAssembly(),
             SearchFlowAssembly(),
-            DomainAssembly()
+            DomainAssembly(),
+            DataAssembly(),
+            NetworkingAssembly(environment: environment),
+            StorageAssembly()
         ])
         let appCoordinator = assembler.resolver.resolveSafe(AppCoordinator.self)
         completion(assembler, appCoordinator)

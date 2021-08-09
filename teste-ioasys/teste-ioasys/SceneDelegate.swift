@@ -28,8 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //        }
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        dependencyInjector = DependencyInjector(navigationController: UINavigationController())
+
+        dependencyInjector = DependencyInjector(navigationController: UINavigationController(), environment: SetupConstants.environment)
         dependencyInjector?.build(completion: { assembler, appCoordinator in
             self.assembler = assembler
             window?.makeKeyAndVisible()

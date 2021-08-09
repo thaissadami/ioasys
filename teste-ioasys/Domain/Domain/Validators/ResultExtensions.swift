@@ -2,7 +2,8 @@
 //  ResultExtensions.swift
 //  Domain
 //
-//  Created by Thais Sadami on 05/08/21.
+//  Created by Itamar Silva on 06/08/20.
+//  Copyright © 2020 Itamar Silva. All rights reserved.
 //
 
 import Foundation

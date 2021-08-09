@@ -2,7 +2,9 @@
 //  LoginPresenter.swift
 //  teste-ioasys
 //
-//  Created by Thais Sadami on 04/08/21.
+//  Created by Itamar Silva on 16/07/20.
+//  Copyright © 2020 ioasys. All rights reserved.
+//  Changes by Thais Sadami on 04/08/21.
 //
 
 import Foundation
@@ -24,10 +26,13 @@ class LoginPresenter {
     private weak var view: LoginViewable?
     private let coordinator: LoginSceneCoordinating
     private let formValidateUseCase: LoginFormValidateUseCaseProtocol
+    private let authUseCase: AuthenticateUseCaseProtocol
 
-    init(coordinator: LoginSceneCoordinating, formValidateUseCase: LoginFormValidateUseCaseProtocol) {
+    init(coordinator: LoginSceneCoordinating, formValidateUseCase: LoginFormValidateUseCaseProtocol,
+         authUseCase: AuthenticateUseCaseProtocol) {
         self.coordinator = coordinator
         self.formValidateUseCase = formValidateUseCase
+        self.authUseCase = authUseCase
     }
 
     func attach(_ view: LoginViewable) {
@@ -45,7 +50,7 @@ extension LoginPresenter: LoginViewPresenting {
 
             switch result {
             case .success:
-                coordinator.showSearch()
+                login(loginForm)
             case .failure(let error):
                 switch error {
                 case .email(let emailError):
@@ -72,6 +77,20 @@ extension LoginPresenter: LoginViewPresenting {
             view?.showPasswordError("Campo de senha vazio")
         case .weak:
             view?.showPasswordError("Senha fraca :(")
+        }
+    }
+    
+    private func login(_ form: LoginForm) {
+        authUseCase.execute(form) { [weak self] result in
+            guard let self = self else {
+                return
+            }
+            switch result {
+            case .success:
+                self.coordinator.showSearch()
+            case .failure(let error):
+                self.view?.showAlert(message: error.localizedDescription)
+            }
         }
     }
 }

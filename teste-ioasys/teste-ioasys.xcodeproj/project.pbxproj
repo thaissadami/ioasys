@@ -13,6 +13,15 @@
 		4B0B62DC26BC6DF300131553 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B62DB26BC6DF300131553 /* Domain.framework */; };
 		4B0B62DD26BC6DF300131553 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B62DB26BC6DF300131553 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B0B62F226BD654800131553 /* DomainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B62F126BD654800131553 /* DomainAssembly.swift */; };
+		4B0B631826BD66D500131553 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B631726BD66D500131553 /* Networking.framework */; };
+		4B0B631926BD66D500131553 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B631726BD66D500131553 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B0B637626BD746600131553 /* AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637526BD746600131553 /* AppData.framework */; };
+		4B0B637726BD746600131553 /* AppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637526BD746600131553 /* AppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B0B637926BD747600131553 /* Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637826BD747600131553 /* Storage.framework */; };
+		4B0B637A26BD747600131553 /* Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637826BD747600131553 /* Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B197C2026C14A160079A870 /* DataAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197C1F26C14A160079A870 /* DataAssembly.swift */; };
+		4B197C2226C14A200079A870 /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197C2126C14A200079A870 /* NetworkAssembly.swift */; };
+		4B197C2426C14A2B0079A870 /* StorageAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B197C2326C14A2B0079A870 /* StorageAssembly.swift */; };
 		4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56921B268266D4003473CB /* LoginViewModel.swift */; };
 		4B56923526829323003473CB /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56923426829323003473CB /* NetworkAPI.swift */; };
 		4B56924726829858003473CB /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56924626829858003473CB /* Investor.swift */; };
@@ -50,6 +59,7 @@
 		4BE34AFA268A36E90095158F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE34AF9268A36E90095158F /* Constants.swift */; };
 		4BE34B0A268A39D30095158F /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE34B09268A39D30095158F /* ErrorResult.swift */; };
 		4BE34B3B268A49E70095158F /* EnterpriseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE34B3A268A49E70095158F /* EnterpriseResponse.swift */; };
+		4BE928C726C1569E00DBAFA7 /* SetupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928C626C1569E00DBAFA7 /* SetupConstants.swift */; };
 		4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013DF2680D15400F2CB43 /* AppDelegate.swift */; };
 		4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013E12680D15400F2CB43 /* SceneDelegate.swift */; };
 		4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF013E82680D15B00F2CB43 /* Assets.xcassets */; };
@@ -101,7 +111,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4B0B631926BD66D500131553 /* Networking.framework in Embed Frameworks */,
 				4B0B62DD26BC6DF300131553 /* Domain.framework in Embed Frameworks */,
+				4B0B637A26BD747600131553 /* Storage.framework in Embed Frameworks */,
+				4B0B637726BD746600131553 /* AppData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +129,12 @@
 		4B0B62AD26BB33C800131553 /* ResolverExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtension.swift; sourceTree = "<group>"; };
 		4B0B62DB26BC6DF300131553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0B62F126BD654800131553 /* DomainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainAssembly.swift; sourceTree = "<group>"; };
+		4B0B631726BD66D500131553 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0B637526BD746600131553 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0B637826BD747600131553 /* Storage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Storage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B197C1F26C14A160079A870 /* DataAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAssembly.swift; sourceTree = "<group>"; };
+		4B197C2126C14A200079A870 /* NetworkAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAssembly.swift; sourceTree = "<group>"; };
+		4B197C2326C14A2B0079A870 /* StorageAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAssembly.swift; sourceTree = "<group>"; };
 		4B56921B268266D4003473CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4B56923426829323003473CB /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4B56924626829858003473CB /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
@@ -153,6 +172,7 @@
 		4BE34AF9268A36E90095158F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4BE34B09268A39D30095158F /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 		4BE34B3A268A49E70095158F /* EnterpriseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseResponse.swift; sourceTree = "<group>"; };
+		4BE928C626C1569E00DBAFA7 /* SetupConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupConstants.swift; sourceTree = "<group>"; };
 		4BF013DC2680D15400F2CB43 /* teste-ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF013DF2680D15400F2CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF013E12680D15400F2CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -193,8 +213,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0B637626BD746600131553 /* AppData.framework in Frameworks */,
 				4B0B62DC26BC6DF300131553 /* Domain.framework in Frameworks */,
+				4B0B637926BD747600131553 /* Storage.framework in Frameworks */,
 				49727B0F594FBCC7D59DB34B /* Pods_teste_ioasys.framework in Frameworks */,
+				4B0B631826BD66D500131553 /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				4B0B62F126BD654800131553 /* DomainAssembly.swift */,
+				4B197C1F26C14A160079A870 /* DataAssembly.swift */,
+				4B197C2126C14A200079A870 /* NetworkAssembly.swift */,
+				4B197C2326C14A2B0079A870 /* StorageAssembly.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -432,6 +458,7 @@
 			children = (
 				4BF013DF2680D15400F2CB43 /* AppDelegate.swift */,
 				4BF013E12680D15400F2CB43 /* SceneDelegate.swift */,
+				4BE928C626C1569E00DBAFA7 /* SetupConstants.swift */,
 				4B8B505A26BAC5A30078A739 /* DependencyInject */,
 				4BF2230726BAD3FD00FCDAFD /* Coordinator */,
 				4BF2231026BAD63800FCDAFD /* Scenes */,
@@ -575,6 +602,9 @@
 		EA9819CADD58148973638864 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B0B637826BD747600131553 /* Storage.framework */,
+				4B0B637526BD746600131553 /* AppData.framework */,
+				4B0B631726BD66D500131553 /* Networking.framework */,
 				4B0B62DB26BC6DF300131553 /* Domain.framework */,
 				10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */,
 				A889A56002803BF14B397FBF /* Pods_teste_ioasys_teste_ioasysUITests.framework */,
@@ -841,9 +871,11 @@
 				4BF222FB26BAD22E00FCDAFD /* SearchFactoryImplementation.swift in Sources */,
 				4BF2230F26BAD5DD00FCDAFD /* SearchCoordinator.swift in Sources */,
 				4BF0141D2680DAC300F2CB43 /* Credential.swift in Sources */,
+				4B197C2026C14A160079A870 /* DataAssembly.swift in Sources */,
 				4BE34AC826892D200095158F /* DescriptionCell.swift in Sources */,
 				4B95741F26880417007A9517 /* SearchResponse.swift in Sources */,
 				4B95745626882355007A9517 /* DetailEnterpriseViewModel.swift in Sources */,
+				4B197C2226C14A200079A870 /* NetworkAssembly.swift in Sources */,
 				4B0B62AB26BB2F2F00131553 /* SearchPresenter.swift in Sources */,
 				4BF2230626BAD3BE00FCDAFD /* CoordinatorFactoryImplementation.swift in Sources */,
 				4B9573AB2687D521007A9517 /* SearchView.swift in Sources */,
@@ -865,7 +897,9 @@
 				4BF222FF26BAD33800FCDAFD /* AuthenticationFactory.swift in Sources */,
 				4B0B62F226BD654800131553 /* DomainAssembly.swift in Sources */,
 				4B8B506526BAC6710078A739 /* AuthenticationFlowAssembly.swift in Sources */,
+				4B197C2426C14A2B0079A870 /* StorageAssembly.swift in Sources */,
 				4BF2230926BAD40A00FCDAFD /* Coordinator.swift in Sources */,
+				4BE928C726C1569E00DBAFA7 /* SetupConstants.swift in Sources */,
 				4BF222FD26BAD30800FCDAFD /* DependencyFactory.swift in Sources */,
 				4B95745B2688243B007A9517 /* DetailEnterpriseViewDelegate.swift in Sources */,
 				4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */,

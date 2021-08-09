@@ -1,3 +1,6 @@
+source 'https://cdn.cocoapods.org/'
+source 'git@bitbucket.org:ioasys/ioasys-specs.git'
+
 platform :ios, '13.0'
 inhibit_all_warnings!
 use_frameworks!
@@ -12,21 +15,24 @@ def diPods
   pod 'SwinjectAutoregistration', '~> 2.7.0'
 end
 
+def networkingPods
+  pod 'OxeNetworking'
+end
+
+def uiPods
+  pod 'SnapKit', '~> 5.0'
+  pod 'Material', '~> 2.16.4'
+  pod 'SDWebImage', '~> 5.11'
+end
+
 target 'teste-ioasys' do
   project 'teste-ioasys'
   
   sharedPods
   diPods
+  networkingPods
+  uiPods
   
-  pod 'SnapKit', '~> 5.0'
-  pod 'Material', '~> 2.16.4'
-  pod 'Alamofire', '~> 5.4.1'
-  pod 'SwiftyJSON', '~> 5.0'
-#  pod 'KeychainSwift', '~> 11.0.0'
-  pod 'SDWebImage', '~> 5.11'
-  pod 'Swinject', '~> 2.7.1'
-  pod 'SwinjectAutoregistration', '~> 2.7.0'
-
   target 'teste-ioasysTests' do
     inherit! :search_paths
   end
@@ -42,4 +48,29 @@ target 'Domain' do
   sharedPods
 
   target 'DomainTests'
+end
+
+target 'Networking' do
+  project 'Networking/Networking'
+
+  sharedPods
+  networkingPods
+
+  target 'NetworkingTests'
+end
+
+target 'Storage' do
+  project 'Storage/Storage'
+
+  sharedPods
+
+  target 'StorageTests'
+end
+
+target 'AppData' do
+  project 'AppData/AppData'
+
+  sharedPods
+
+  target 'AppDataTests'
 end
