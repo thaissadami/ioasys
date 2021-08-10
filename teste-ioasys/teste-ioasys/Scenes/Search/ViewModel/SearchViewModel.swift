@@ -24,13 +24,13 @@ class SearchViewModel: NetworkAPI{
     
     override func successResult(response:AFDataResponse<Data>) {
         
-        do {
-            let response = try JSONDecoder().decode(SearchResponse.self, from: response.data ?? Data())
-            self.viewController.result = response.enterprises!
-        } catch {
-            print(error.localizedDescription)
-        }
-        self.viewController.hideLoading()
+//        do {
+//            let response = try JSONDecoder().decode(SearchResponse.self, from: response.data ?? Data())
+//            self.viewController.result = response.enterprises!
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//        self.viewController.hideLoading()
     }
     
     override func failure(error:AFDataResponse<Data>){

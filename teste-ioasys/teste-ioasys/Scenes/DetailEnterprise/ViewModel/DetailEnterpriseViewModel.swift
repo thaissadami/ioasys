@@ -30,7 +30,7 @@ class DetailEnterpriseViewModel: NetworkAPI{
             print(error.localizedDescription)
         }
         
-        viewController.stopLoading()
+//        viewController.stopLoading()
     }
     
     override func failure(error:AFDataResponse<Data>){
@@ -42,6 +42,6 @@ class DetailEnterpriseViewModel: NetworkAPI{
             print(error.localizedDescription)
         }
         
-        self.viewController.stopLoading()
+//        self.viewController.stopLoading()
     }
 }

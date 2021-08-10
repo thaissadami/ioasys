@@ -18,12 +18,12 @@ class SearchCoordinator: Coordinator {
     var childCoordinators: [Coordinator] = []
     var navigationController: UINavigationController
 
-    private weak var delegate: SearchCoordinatorDelegate?
+    private weak var coordinatorDelegate: SearchCoordinatorDelegate?
     private let searchFactory: SearchFactory
 
     init(navigationController: UINavigationController, delegate: SearchCoordinatorDelegate, searchFactory: SearchFactory) {
         self.navigationController = navigationController
-        self.delegate = delegate
+        self.coordinatorDelegate = delegate
         self.searchFactory = searchFactory
     }
 
@@ -39,6 +39,6 @@ class SearchCoordinator: Coordinator {
 
 extension SearchCoordinator: SearchSceneCoordinating {
     func showDetails() {
-        #warning("TODO")
+        coordinatorDelegate?.didShowDetail()
     }
 }

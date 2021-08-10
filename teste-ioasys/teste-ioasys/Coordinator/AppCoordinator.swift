@@ -35,6 +35,12 @@ class AppCoordinator: Coordinator {
         searchCoordinator.start()
         childCoordinators.append(searchCoordinator)
     }
+    
+    func showDetailEnterpriseFlow() {
+        let detailEnterpriseCoordinator = coordinatorFactory.makeDetailEnterpriseCoordinator()
+        detailEnterpriseCoordinator.start()
+        childCoordinators.append(detailEnterpriseCoordinator)
+    }
 
 }
 
@@ -45,12 +51,12 @@ extension AppCoordinator: AuthenticationCoordinatorDelegate {
     }
 }
 
-//MARK: Home Coordinator Delegate
+//MARK: Search Coordinator Delegate
 
 extension AppCoordinator: SearchCoordinatorDelegate {
 
     func didShowDetail() {
-        #warning("TODO - ")
+        showDetailEnterpriseFlow()
     }
 }
 

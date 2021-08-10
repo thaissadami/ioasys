@@ -39,31 +39,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "ED9B7246-0C2F-4C74-81B0-121D3CDC81B5"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Domain/Domain/UseCases/AuthtenticateUseCase/AuthenticateUseCase.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "execute(_:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "150F1374-018E-4A45-BBC2-F78BA9FA4FBB"
+            uuid = "25C3FA1B-0A7B-400D-A1F1-F374E2E46E7D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Networking/Networking/DataSources/AuthRemoteDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "login(_:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -71,209 +55,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "82D296F9-2455-4C92-BDAF-1FFC6EDE128A"
+            uuid = "D394D0DA-AABD-43BC-9960-BC57E5C9832D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "login(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "82D296F9-2455-4C92-BDAF-1FFC6EDE128A - b45a249c26af0118"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "teste_ioasys.LoginPresenter.login(Domain.LoginForm) -&gt; ()"
-                  moduleName = "teste-ioasys"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "312">
-               </Location>
-               <Location
-                  uuid = "82D296F9-2455-4C92-BDAF-1FFC6EDE128A - d9a21eed0cc5e96d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; () in teste_ioasys.LoginPresenter.login(Domain.LoginForm) -&gt; ()"
-                  moduleName = "teste-ioasys"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "62774861-3B86-4F6B-8F4D-7D5CE6959D0D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppData/AppData/Repositories/AuthRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "login(_:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "62774861-3B86-4F6B-8F4D-7D5CE6959D0D - 24c5d6cd22f97cd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; () in AppData.AuthRepository.login(_: Domain.LoginForm, completion: (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AppData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/AppData/AppData/Repositories/AuthRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "644">
-               </Location>
-               <Location
-                  uuid = "62774861-3B86-4F6B-8F4D-7D5CE6959D0D - 388fed176433de9c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in closure #1 (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; () in AppData.AuthRepository.login(_: Domain.LoginForm, completion: (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AppData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/AppData/AppData/Repositories/AuthRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "0">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EDBC88FB-488A-4BD0-BDB1-514DFB986E36"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AppData/AppData/Repositories/AuthRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "login(_:completion:)"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "showSearch()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DFD193C5-7703-4B76-81EF-F1A5C5F8A31A"
+            uuid = "CDD1BABE-7FE4-48A0-8C84-C9A58326BC40"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
+            filePath = "teste-ioasys/Coordinator/AuthenticationCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "logIn(email:password:)"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "showSearch()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DFD193C5-7703-4B76-81EF-F1A5C5F8A31A - c7e6221159bfc359"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "teste_ioasys.LoginPresenter.logIn(email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "teste-ioasys"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "DFD193C5-7703-4B76-81EF-F1A5C5F8A31A - 39ba0b0b744e442f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Domain.LoginFormValidateUseCaseError&gt;) -&gt; () in teste_ioasys.LoginPresenter.logIn(email: Swift.String, password: Swift.String) -&gt; ()"
-                  moduleName = "teste-ioasys"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/teste-ioasys/Scenes/Auth/Login/Presenter/LoginPresenter.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "156">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "49A2DCF6-59D2-401E-9878-6C5F5A7ED283"
+            uuid = "9AADE38F-34F2-4D5F-BAC1-B381C6849190"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AppData/AppData/Repositories/AuthRepository.swift"
+            filePath = "teste-ioasys/Coordinator/AppCoordinator.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "login(_:completion:)"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "didAuthenticate()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "49A2DCF6-59D2-401E-9878-6C5F5A7ED283 - dc74d535606ed1bb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AppData.AuthRepository.login(_: Domain.LoginForm, completion: (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AppData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/AppData/AppData/Repositories/AuthRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "104">
-               </Location>
-               <Location
-                  uuid = "49A2DCF6-59D2-401E-9878-6C5F5A7ED283 - 24c5d6cd22f97d18"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; () in AppData.AuthRepository.login(_: Domain.LoginForm, completion: (Swift.Result&lt;Domain.LoginResponse, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "AppData"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thaissadami/Desktop/ioasys/teste-ioasys/AppData/AppData/Repositories/AuthRepository.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "27"
-                  endingLineNumber = "27"
-                  offsetFromSymbolStart = "120">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC5DE1F4-C120-4673-9143-48252B1BA3AF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/OxeNetworking/OxeNetworking/Sources/OxeNetworking/Helpers/Extensions/Response+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "asDecodable(_:from:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77B477B2-053A-45F3-9B56-845C98122C12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Pods/OxeNetworking/OxeNetworking/Sources/OxeNetworking/Helpers/Extensions/Response+Ext.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "asDecodable(_:from:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

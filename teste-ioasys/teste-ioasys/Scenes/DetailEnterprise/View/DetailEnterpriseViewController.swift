@@ -8,12 +8,18 @@
 import UIKit
 import Material
 
+
+protocol DetailEnterpriseViewPresenting {
+    func getDetailEnterprise(idEnterprise: Int)
+}
+
 class DetailEnterpriseViewController: UIViewController {
     
     var mainView: DetailEnterpriseView { return self.view as! DetailEnterpriseView}
+    private let presenter: DetailEnterpriseViewPresenting
     
     open var dataSourceItems = [DataSourceItem]()
-    public var detailEnterpriseViewModel: DetailEnterpriseViewModel?
+//    public var detailEnterpriseViewModel: DetailEnterpriseViewModel?
     public var loadingCustom: ActivityIndicatorCustom! = nil
 //    public var enterprise: Enterprise?
     
@@ -21,6 +27,20 @@ class DetailEnterpriseViewController: UIViewController {
         didSet {
             self.mainView.tableView.reloadData()
         }
+    }
+    
+    init(presenter: DetailEnterpriseViewPresenting) {
+        self.presenter = presenter
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIWindow.keyboardWillHideNotification, object: nil)
     }
     
     override func loadView() {
@@ -34,12 +54,11 @@ class DetailEnterpriseViewController: UIViewController {
         loadingCustom = ActivityIndicatorCustom(viewController: self)
         loadingCustom.bg.backgroundColor = .clear
     
-        detailEnterpriseViewModel = DetailEnterpriseViewModel(viewController: self)
-        
-        if let enterpriseId = enterprise?.id {
-            startLoading()
-            detailEnterpriseViewModel?.getDetailEnterprise(id: enterpriseId)
-        }
+//        detailEnterpriseViewModel = DetailEnterpriseViewModel(viewController: self)
+//        if let enterpriseId = enterprise?.id {
+//            showLoading()
+//            detailEnterpriseViewModel?.getDetailEnterprise(id: enterpriseId)
+//        }
         
         self.mainView.tableView.delegate = self
         self.mainView.tableView.dataSource = self
@@ -55,11 +74,23 @@ class DetailEnterpriseViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
-    func startLoading(){
-        self.loadingCustom.show()
+}
+
+extension DetailEnterpriseViewController: DetailEnterpriseViewable, IndicatorProtocol {
+    
+    func showAlert(message: String) {
+        
+    }
+    
+    func getDetailEnterprise(idEnterprise: Int) {
+        
+    }
+    
+    func showLoading() {
+        showActivityIndicator(in: self.loadingCustom)
     }
 
-    func stopLoading(){
-        self.loadingCustom.dismiss()
+    func hideLoading() {
+        hideActivityIndicator(in: self.loadingCustom)
     }
 }

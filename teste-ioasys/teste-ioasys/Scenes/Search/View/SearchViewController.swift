@@ -10,7 +10,7 @@ import Material
 
 protocol SearchViewPresenting {
     func getCompanies()
-    func showDetails()
+    func showCompanies()
 }
 
 class SearchViewController: UIViewController {
@@ -110,9 +110,9 @@ class SearchViewController: UIViewController {
     }
     
     func openDetailEnterprise(enterprise: Enterprise){
-        let detailEnterpriseVC = DetailEnterpriseViewController()
-        detailEnterpriseVC.enterprise = enterprise
-        self.navigationController?.pushViewController(detailEnterpriseVC, animated: true)
+//        let detailEnterpriseVC = DetailEnterpriseViewController()
+//        detailEnterpriseVC.enterprise = enterprise
+//        self.navigationController?.pushViewController(detailEnterpriseVC, animated: true)
     }
     
     // MARK: Keyboard Notifications
@@ -152,14 +152,14 @@ extension SearchViewController: SearchViewDelegate {
     }
 }
 
-extension SearchViewController: SearchViewable {
+extension SearchViewController: SearchViewable, IndicatorProtocol {
 
     func showLoading() {
-        self.loadingCustom.show()
+        showActivityIndicator(in: self.loadingCustom)
     }
 
     func hideLoading() {
-        self.loadingCustom.dismiss()
+        hideActivityIndicator(in: self.loadingCustom)
     }
 
     func setCompanies() {

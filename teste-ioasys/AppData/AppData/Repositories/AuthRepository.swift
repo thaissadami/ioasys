@@ -22,7 +22,6 @@ public class AuthRepository {
 extension AuthRepository: Domain.AuthRepositoryProtocol {
 
     public func login(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ()) {
-        //TODO SALVAR NO STORAGE PARA O DOMAIN PEGAR
         //AppData não conhece o Storage, criado protocol para acessar storage
         remoteDatSource.login(form) { [weak self] result in
             guard let self = self else {

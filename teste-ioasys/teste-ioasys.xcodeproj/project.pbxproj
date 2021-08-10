@@ -60,6 +60,10 @@
 		4BE928DA26C1BE6200DBAFA7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928D926C1BE6200DBAFA7 /* UIViewController+Extension.swift */; };
 		4BE928DC26C1BEAB00DBAFA7 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928DB26C1BEAB00DBAFA7 /* UIAlertController+Extension.swift */; };
 		4BE928DE26C1BF5700DBAFA7 /* IndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928DD26C1BF5700DBAFA7 /* IndicatorProtocol.swift */; };
+		4BE928E926C309A800DBAFA7 /* DetailEnterpriseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928E826C309A800DBAFA7 /* DetailEnterpriseCoordinator.swift */; };
+		4BE928EC26C30A0700DBAFA7 /* DetailEnterpriseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928EB26C30A0700DBAFA7 /* DetailEnterpriseFactory.swift */; };
+		4BE928EE26C30B0200DBAFA7 /* DetailEnterpriseFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928ED26C30B0200DBAFA7 /* DetailEnterpriseFactoryImplementation.swift */; };
+		4BE928F026C30B9700DBAFA7 /* DetailEnterprisePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928EF26C30B9700DBAFA7 /* DetailEnterprisePresenter.swift */; };
 		4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013DF2680D15400F2CB43 /* AppDelegate.swift */; };
 		4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF013E12680D15400F2CB43 /* SceneDelegate.swift */; };
 		4BF013E92680D15B00F2CB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BF013E82680D15B00F2CB43 /* Assets.xcassets */; };
@@ -152,8 +156,8 @@
 		4B9573E62687E86C007A9517 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		4B95740A2687EF67007A9517 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		4B95740F2687F844007A9517 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
-		4B957416268801F0007A9517 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
-		4B95741E26880417007A9517 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		4B957416268801F0007A9517 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Enterprise.swift; path = ../../../../Domain/Domain/Response/Enterprise.swift; sourceTree = "<group>"; };
+		4B95741E26880417007A9517 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResponse.swift; path = ../../../../Domain/Domain/Response/SearchResponse.swift; sourceTree = "<group>"; };
 		4B95744826881FEF007A9517 /* DetailEnterpriseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseView.swift; sourceTree = "<group>"; };
 		4B9574502688200A007A9517 /* DetailEnterpriseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseViewController.swift; sourceTree = "<group>"; };
 		4B95745526882355007A9517 /* DetailEnterpriseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +176,10 @@
 		4BE928D926C1BE6200DBAFA7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4BE928DB26C1BEAB00DBAFA7 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 		4BE928DD26C1BF5700DBAFA7 /* IndicatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorProtocol.swift; sourceTree = "<group>"; };
+		4BE928E826C309A800DBAFA7 /* DetailEnterpriseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseCoordinator.swift; sourceTree = "<group>"; };
+		4BE928EB26C30A0700DBAFA7 /* DetailEnterpriseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseFactory.swift; sourceTree = "<group>"; };
+		4BE928ED26C30B0200DBAFA7 /* DetailEnterpriseFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterpriseFactoryImplementation.swift; sourceTree = "<group>"; };
+		4BE928EF26C30B9700DBAFA7 /* DetailEnterprisePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEnterprisePresenter.swift; sourceTree = "<group>"; };
 		4BF013DC2680D15400F2CB43 /* teste-ioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "teste-ioasys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF013DF2680D15400F2CB43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF013E12680D15400F2CB43 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -363,14 +371,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		4B95743F26880DE1007A9517 /* DetailSearch */ = {
+		4B95743F26880DE1007A9517 /* DetailEnterprise */ = {
 			isa = PBXGroup;
 			children = (
 				4BE34B39268A49D80095158F /* Model */,
 				4BE34ACD2689321E0095158F /* View */,
 				4BE34ACE268932250095158F /* ViewModel */,
+				4BE928EF26C30B9700DBAFA7 /* DetailEnterprisePresenter.swift */,
 			);
-			path = DetailSearch;
+			path = DetailEnterprise;
 			sourceTree = "<group>";
 		};
 		4BE34ACC268932080095158F /* Cell */ = {
@@ -425,6 +434,15 @@
 				4BE34B3A268A49E70095158F /* EnterpriseResponse.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4BE928EA26C309F800DBAFA7 /* DetailEnterprise */ = {
+			isa = PBXGroup;
+			children = (
+				4BE928EB26C30A0700DBAFA7 /* DetailEnterpriseFactory.swift */,
+				4BE928ED26C30B0200DBAFA7 /* DetailEnterpriseFactoryImplementation.swift */,
+			);
+			path = DetailEnterprise;
 			sourceTree = "<group>";
 		};
 		4BF013D32680D15400F2CB43 = {
@@ -482,6 +500,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF222FC26BAD30800FCDAFD /* DependencyFactory.swift */,
+				4BE928EA26C309F800DBAFA7 /* DetailEnterprise */,
 				4BF222F726BAD20900FCDAFD /* Authenticate */,
 				4BF222F626BAD20200FCDAFD /* Search */,
 				4BF2230226BAD38A00FCDAFD /* Coordinator */,
@@ -523,6 +542,7 @@
 				4BF2230A26BAD42600FCDAFD /* AppCoordinator.swift */,
 				4BF2230C26BAD47900FCDAFD /* AuthenticationCoordinator.swift */,
 				4BF2230E26BAD5DD00FCDAFD /* SearchCoordinator.swift */,
+				4BE928E826C309A800DBAFA7 /* DetailEnterpriseCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -532,7 +552,7 @@
 			children = (
 				4BF2231126BAD64200FCDAFD /* Auth */,
 				4B95739A2687D3AA007A9517 /* Search */,
-				4B95743F26880DE1007A9517 /* DetailSearch */,
+				4B95743F26880DE1007A9517 /* DetailEnterprise */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -876,18 +896,22 @@
 				4BE34AE0268A0E900095158F /* Validator.swift in Sources */,
 				4BF013E02680D15400F2CB43 /* AppDelegate.swift in Sources */,
 				4BF222FF26BAD33800FCDAFD /* AuthenticationFactory.swift in Sources */,
+				4BE928EE26C30B0200DBAFA7 /* DetailEnterpriseFactoryImplementation.swift in Sources */,
 				4B0B62F226BD654800131553 /* DomainAssembly.swift in Sources */,
 				4B8B506526BAC6710078A739 /* AuthenticationFlowAssembly.swift in Sources */,
 				4B197C2426C14A2B0079A870 /* StorageAssembly.swift in Sources */,
 				4BF2230926BAD40A00FCDAFD /* Coordinator.swift in Sources */,
 				4BE928C726C1569E00DBAFA7 /* SetupConstants.swift in Sources */,
 				4BF222FD26BAD30800FCDAFD /* DependencyFactory.swift in Sources */,
+				4BE928EC26C30A0700DBAFA7 /* DetailEnterpriseFactory.swift in Sources */,
 				4B95745B2688243B007A9517 /* DetailEnterpriseViewDelegate.swift in Sources */,
 				4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */,
 				4B95740B2687EF67007A9517 /* ColorExtension.swift in Sources */,
+				4BE928F026C30B9700DBAFA7 /* DetailEnterprisePresenter.swift in Sources */,
 				4B9573B02687D5FA007A9517 /* SearchViewControllerDelegate.swift in Sources */,
 				4B95738C2687CF56007A9517 /* SearchViewController.swift in Sources */,
 				4B56923526829323003473CB /* NetworkAPI.swift in Sources */,
+				4BE928E926C309A800DBAFA7 /* DetailEnterpriseCoordinator.swift in Sources */,
 				4B9573B82687D9AD007A9517 /* SearchViewModel.swift in Sources */,
 				4BE34AFA268A36E90095158F /* Constants.swift in Sources */,
 				4BF2230126BAD35000FCDAFD /* AuthenticationFactoryImplementation.swift in Sources */,

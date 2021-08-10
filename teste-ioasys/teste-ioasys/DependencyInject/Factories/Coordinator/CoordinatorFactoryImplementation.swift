@@ -24,4 +24,8 @@ class CoordinatorFactoryImplementation: CoordinatorFactory {
     func makeSearchCoordinator() -> SearchCoordinator {
         return resolver.resolve(SearchCoordinator.self)!
     }
+    
+    func makeDetailEnterpriseCoordinator() -> DetailEnterpriseCoordinator {
+        return resolver.resolve(DetailEnterpriseCoordinator.self)!
+    }
 }

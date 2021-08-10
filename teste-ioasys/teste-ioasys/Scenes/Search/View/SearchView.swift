@@ -9,7 +9,6 @@ import Foundation
 import SnapKit
 
 protocol SearchViewDelegate: AnyObject {
-    #warning("TODO - Create company")
     func didSelect(_ company: String)
 }
 
