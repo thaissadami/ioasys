@@ -94,7 +94,7 @@ public struct Enterprise {
 //        try super.encode(to: encoder)
 //    }
 //}
-
+//
 public struct EnterpriseType: Codable {
     var enterprise_type_name: String
     var id: Int

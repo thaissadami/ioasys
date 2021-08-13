@@ -9,22 +9,23 @@ import Foundation
 import Domain
 
 protocol SearchViewable: ViewLoadable {
-    func setCompanies()
     func showAlert(message: String)
+    func setEnterprises(_ resultEnterprises: [Enterprise])
 }
 
 protocol SearchSceneCoordinating {
-    func showCompanies()
+    func showDetailEnterprise(_ enterprise: Enterprise)
 }
 
 class SearchPresenter {
 
     private weak var view: SearchViewable?
     private let coodinator: SearchSceneCoordinating
-    private let getCompaniesUseCase: GetCompaniesUseCaseProtocol
+    private let enterprisesUseCase: EnterprisesUseCaseProtocol
 
-    init(coordinator: SearchSceneCoordinating) {
+    init(coordinator: SearchSceneCoordinating, enterprisesUseCase: EnterprisesUseCaseProtocol) {
         self.coodinator = coordinator
+        self.enterprisesUseCase = enterprisesUseCase
     }
 
     func attach(_ view: SearchViewable) {
@@ -34,23 +35,27 @@ class SearchPresenter {
 
 extension SearchPresenter: SearchViewPresenting {
     
-    func getCompanies() {
+    func showDetailEnterprise(_ enterprise: Enterprise) {
+        coodinator.showDetailEnterprise(enterprise)
+    }
+    
+    func getEnterprisesWithName(_ name: String) {
+        let request = EnterpriseRequest(name: name)
+        
         self.view?.showLoading()
-        getCompaniesUseCase.execute() { [weak self] result in
+        enterprisesUseCase.execute(request: request) { [weak self] result in
             guard let self = self else {
                 return
             }
             self.view?.hideLoading()
             switch result {
             case .success:
-                self.showCompanies()
+                result.successHandler { response in
+                    self.view?.setEnterprises(response.enterprises)
+                }
             case .failure(let error):
                 self.view?.showAlert(message: error.localizedDescription)
             }
         }
-    }
-
-    func showCompanies() {
-        coodinator.showCompanies()
     }
 }

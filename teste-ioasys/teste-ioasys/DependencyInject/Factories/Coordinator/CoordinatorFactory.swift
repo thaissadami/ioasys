@@ -11,5 +11,4 @@ protocol CoordinatorFactory: DependencyFactory {
 
     func makeAuthenticateCoordinator() -> AuthenticationCoordinator
     func makeSearchCoordinator() -> SearchCoordinator
-    func makeDetailEnterpriseCoordinator() -> DetailEnterpriseCoordinator
 }

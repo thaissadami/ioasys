@@ -16,8 +16,10 @@ class AuthenticationFlowAssembly: Assembly {
 
         //MARK: LoginScene
         container.register(LoginSceneCoordinating.self) { _ in authCoordinator}
+        //tudo que voce constroi dentro da closure
         
         //já está dentro do container a linha debaixo faz de forma automática (instanciar presenter e coordinator e inserir dentro do container)
+        
         container.autoregister(LoginViewPresenting.self, initializer: LoginPresenter.init)
     }
 }

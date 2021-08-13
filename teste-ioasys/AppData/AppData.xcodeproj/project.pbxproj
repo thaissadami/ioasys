@@ -17,8 +17,10 @@
 		4B0B638E26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638D26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift */; };
 		4B0B639026BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638F26BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift */; };
 		4BE928E526C2CFAF00DBAFA7 /* DataCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928E426C2CFAF00DBAFA7 /* DataCompletion.swift */; };
-		4BE9290026C3166400DBAFA7 /* EnterpriseRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928FF26C3166400DBAFA7 /* EnterpriseRequestDTO.swift */; };
+		4BE9290026C3166400DBAFA7 /* EnterprisesRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */; };
 		4BE9290226C3167600DBAFA7 /* EnterprisesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */; };
+		4BE9290726C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290626C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift */; };
+		4BE9291A26C41AC800DBAFA7 /* EnterprisesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9291926C41AC800DBAFA7 /* EnterprisesRepository.swift */; };
 		57D2D7E2677307C26D80DD77 /* Pods_AppData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38325B6B377B087E4D5BA69E /* Pods_AppData.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +65,10 @@
 		4B0B638D26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4B0B638F26BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4BE928E426C2CFAF00DBAFA7 /* DataCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCompletion.swift; sourceTree = "<group>"; };
-		4BE928FF26C3166400DBAFA7 /* EnterpriseRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseRequestDTO.swift; sourceTree = "<group>"; };
+		4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRequestDTO.swift; sourceTree = "<group>"; };
 		4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesResponseDTO.swift; sourceTree = "<group>"; };
+		4BE9290626C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
+		4BE9291926C41AC800DBAFA7 /* EnterprisesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRepository.swift; sourceTree = "<group>"; };
 		D2A19B17B5F665A320357C36 /* Pods-AppData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppData.debug.xcconfig"; path = "Target Support Files/Pods-AppData/Pods-AppData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				4B0B638A26BD79E800131553 /* AuthRepository.swift */,
+				4BE9291926C41AC800DBAFA7 /* EnterprisesRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				4B0B638D26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift */,
+				4BE9290626C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift */,
 			);
 			path = RemoteDataSources;
 			sourceTree = "<group>";
@@ -178,7 +184,7 @@
 		4BE928FE26C3164300DBAFA7 /* Enterprise */ = {
 			isa = PBXGroup;
 			children = (
-				4BE928FF26C3166400DBAFA7 /* EnterpriseRequestDTO.swift */,
+				4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */,
 				4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */,
 			);
 			path = Enterprise;
@@ -355,9 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE9290726C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift in Sources */,
 				4B0B638E26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift in Sources */,
+				4BE9291A26C41AC800DBAFA7 /* EnterprisesRepository.swift in Sources */,
 				4B0B639026BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift in Sources */,
-				4BE9290026C3166400DBAFA7 /* EnterpriseRequestDTO.swift in Sources */,
+				4BE9290026C3166400DBAFA7 /* EnterprisesRequestDTO.swift in Sources */,
 				4BE928E526C2CFAF00DBAFA7 /* DataCompletion.swift in Sources */,
 				4BE9290226C3167600DBAFA7 /* EnterprisesResponseDTO.swift in Sources */,
 				4B0B638B26BD79E800131553 /* AuthRepository.swift in Sources */,

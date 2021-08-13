@@ -15,7 +15,6 @@ class StorageAssembly: Assembly {
     func assemble(container: Container) {
 
         container.autoregister(AppData.AuthLocalDataSourceProtocol.self, initializer: Storage.AuthLocalDataSource.init)
-        
     
     }
 }

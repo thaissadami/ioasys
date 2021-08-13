@@ -7,6 +7,7 @@
 
 import UIKit
 import Swinject
+//import IQKeyboardManagerSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -29,6 +30,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: UIScreen.main.bounds)
 
+//        IQKeyboardManager.shared.toolbarDoneBarButtonItemText = "Concluído"
+//        IQKeyboardManager.shared.enable = true
+        
         dependencyInjector = DependencyInjector(navigationController: UINavigationController(), environment: SetupConstants.environment)
         dependencyInjector?.build(completion: { assembler, appCoordinator in
             self.assembler = assembler

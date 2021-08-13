@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import Domain
 
 class AppCoordinator: Coordinator {
 
@@ -36,9 +37,9 @@ class AppCoordinator: Coordinator {
         childCoordinators.append(searchCoordinator)
     }
     
-    func showDetailEnterpriseFlow() {
-        let detailEnterpriseCoordinator = coordinatorFactory.makeDetailEnterpriseCoordinator()
-        detailEnterpriseCoordinator.start()
+    func showDetailEnterpriseFlow(_ enterprise: Enterprise) {
+        let detailEnterpriseCoordinator = coordinatorFactory.makeSearchCoordinator()
+        detailEnterpriseCoordinator.showDetailEnterprise(enterprise)
         childCoordinators.append(detailEnterpriseCoordinator)
     }
 
@@ -54,9 +55,8 @@ extension AppCoordinator: AuthenticationCoordinatorDelegate {
 //MARK: Search Coordinator Delegate
 
 extension AppCoordinator: SearchCoordinatorDelegate {
-
-    func didShowDetail() {
-        showDetailEnterpriseFlow()
+    func didShowDetailEnterprise(_ enterprise: Enterprise) {
+        showDetailEnterpriseFlow(enterprise)
     }
 }
 

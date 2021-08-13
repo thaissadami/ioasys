@@ -21,6 +21,7 @@ class NetworkingAssembly: Assembly {
         container.register(Environment.self) { _ in self.environment }
         container.autoregister(Dispatcher.self, initializer: CommonMoyaDispatcher.init)
         container.autoregister(AppData.AuthRemoteDataSourceProtocol.self, initializer: Networking.AuthRemoteDataSource.init)
+        container.autoregister(AppData.EnterprisesRemoteDataSourceProtocol.self, initializer: Networking.EnterprisesRemoteDataSource.init)
     }
 
 }

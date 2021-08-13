@@ -28,6 +28,7 @@ class LoginView: UIView, CodeView {
         super.init(frame: frame)
         setupView()
         setActions()
+        setTapToEndEditing()
     }
     
     func buildViewHierarchy(){

@@ -7,25 +7,26 @@
 
 import UIKit
 import Material
+import Domain
 
 protocol SearchViewPresenting {
-    func getCompanies()
-    func showCompanies()
+    func getEnterprisesWithName(_ name: String)
+    func showDetailEnterprise(_ enterprise: Enterprise)
 }
 
 class SearchViewController: UIViewController {
     
     var mainView: SearchView { return self.view as! SearchView}
-    private let presenter: SearchViewPresenting
+    let presenter: SearchViewPresenting
 
     open var dataSourceItems = [DataSourceItem]()
     public var searchViewModel: SearchViewModel?
     public var loadingCustom: ActivityIndicatorCustom! = nil
     
-    public var result: [Enterprise] = [] {
+    public var resultEnterprises: [Enterprise] = [] {
         didSet {
             self.mainView.tableView.reloadData()
-            setEnterprises(enterprises: result)
+            setEnterprises(resultEnterprises)
         }
     }
     
@@ -89,31 +90,6 @@ class SearchViewController: UIViewController {
         searchViewModel!.getEnterprisesWithName(text: mainView.tfSearch.text ?? "")
     }
     
-    func setEnterprises(enterprises: [Enterprise]){
-        
-        if enterprises.count > 0 {
-            mainView.tableView.isHidden = false
-            mainView.lbResult.isHidden = false
-            mainView.lbEmpty.isHidden = true
-            
-            if enterprises.count == 1 {
-                mainView.lbResult.text = String(enterprises.count) + " resultado encontrado"
-            }else{
-                mainView.lbResult.text = String(enterprises.count) + " resultados encontrados"
-            }
-            
-        }else{
-            mainView.tableView.isHidden = true
-            mainView.lbEmpty.isHidden = false
-            mainView.lbResult.isHidden = true
-        }
-    }
-    
-    func openDetailEnterprise(enterprise: Enterprise){
-//        let detailEnterpriseVC = DetailEnterpriseViewController()
-//        detailEnterpriseVC.enterprise = enterprise
-//        self.navigationController?.pushViewController(detailEnterpriseVC, animated: true)
-    }
     
     // MARK: Keyboard Notifications
     
@@ -143,15 +119,6 @@ class SearchViewController: UIViewController {
 
 }
 
-//MARK: SearchViewDelegate
-
-extension SearchViewController: SearchViewDelegate {
-
-    func didSelect(_ company: String) {
-        #warning("TODO - Implement")
-    }
-}
-
 extension SearchViewController: SearchViewable, IndicatorProtocol {
 
     func showLoading() {
@@ -162,11 +129,26 @@ extension SearchViewController: SearchViewable, IndicatorProtocol {
         hideActivityIndicator(in: self.loadingCustom)
     }
 
-    func setCompanies() {
-
-    }
-
     func showAlert(message: String) {
 
+    }
+    
+    func setEnterprises(_ resultEnterprises: [Enterprise]) {
+        if resultEnterprises.count > 0 {
+            mainView.tableView.isHidden = false
+            mainView.lbResult.isHidden = false
+            mainView.lbEmpty.isHidden = true
+            
+            if resultEnterprises.count == 1 {
+                mainView.lbResult.text = String(resultEnterprises.count) + " resultado encontrado"
+            }else{
+                mainView.lbResult.text = String(resultEnterprises.count) + " resultados encontrados"
+            }
+            
+        }else{
+            mainView.tableView.isHidden = true
+            mainView.lbEmpty.isHidden = false
+            mainView.lbResult.isHidden = true
+        }
     }
 }

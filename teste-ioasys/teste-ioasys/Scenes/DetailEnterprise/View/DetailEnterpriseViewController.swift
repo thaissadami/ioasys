@@ -7,7 +7,7 @@
 
 import UIKit
 import Material
-
+import Domain
 
 protocol DetailEnterpriseViewPresenting {
     func getDetailEnterprise(idEnterprise: Int)

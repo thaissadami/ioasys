@@ -8,10 +8,6 @@
 import Foundation
 import SnapKit
 
-protocol SearchViewDelegate: AnyObject {
-    func didSelect(_ company: String)
-}
-
 class SearchView: UIView, CodeView {
 
     required init?(coder aDecoder: NSCoder) {

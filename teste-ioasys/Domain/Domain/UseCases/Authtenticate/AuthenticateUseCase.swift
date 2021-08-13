@@ -8,6 +8,11 @@
 
 import Foundation
 
+public protocol AuthenticateUseCaseProtocol: AnyObject {
+
+    func execute(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ())
+}
+
 public class AuthenticateUseCase {
 
     private let authRepository: AuthRepositoryProtocol

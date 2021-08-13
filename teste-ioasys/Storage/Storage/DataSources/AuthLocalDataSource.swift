@@ -9,9 +9,7 @@ import Domain
 import AppData
 
 public class AuthLocalDataSource {
-
     public init() {}
-
 }
 
 extension AuthLocalDataSource: AppData.AuthLocalDataSourceProtocol {

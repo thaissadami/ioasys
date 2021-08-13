@@ -23,6 +23,7 @@ def uiPods
   pod 'SnapKit', '~> 5.0'
   pod 'Material', '~> 2.16.4'
   pod 'SDWebImage', '~> 5.11'
+#  pod 'IQKeyboardManagerSwift'
 end
 
 target 'teste-ioasys' do

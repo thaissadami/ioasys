@@ -19,6 +19,10 @@
 		4B0B639726BDA83200131553 /* AuthTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B639626BDA83200131553 /* AuthTarget.swift */; };
 		4B0B639926BDA84900131553 /* UserSessionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B639826BDA84900131553 /* UserSessionRequestHandler.swift */; };
 		4B0B639B26BDA86500131553 /* AuthRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B639A26BDA86500131553 /* AuthRemoteDataSource.swift */; };
+		4BE9290526C3FCD700DBAFA7 /* EnterprisesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290426C3FCD700DBAFA7 /* EnterprisesRemoteDataSource.swift */; };
+		4BE9290926C3FE7100DBAFA7 /* EnterprisesTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290826C3FE7100DBAFA7 /* EnterprisesTarget.swift */; };
+		4BE9290C26C40E2800DBAFA7 /* Task+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290B26C40E2800DBAFA7 /* Task+Extension.swift */; };
+		4BE9292326C4242E00DBAFA7 /* Response+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292226C4242E00DBAFA7 /* Response+Extension.swift */; };
 		54A0F5C2A812BBFA9A67B685 /* Pods_Networking_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56ADB606200FBC3BD32B5C2B /* Pods_Networking_NetworkingTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 		4B0B639826BDA84900131553 /* UserSessionRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSessionRequestHandler.swift; sourceTree = "<group>"; };
 		4B0B639A26BDA86500131553 /* AuthRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSource.swift; sourceTree = "<group>"; };
 		4BDF5DF449792B410F294280 /* Pods-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.debug.xcconfig"; path = "Target Support Files/Pods-Networking/Pods-Networking.debug.xcconfig"; sourceTree = "<group>"; };
+		4BE9290426C3FCD700DBAFA7 /* EnterprisesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRemoteDataSource.swift; sourceTree = "<group>"; };
+		4BE9290826C3FE7100DBAFA7 /* EnterprisesTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesTarget.swift; sourceTree = "<group>"; };
+		4BE9290B26C40E2800DBAFA7 /* Task+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Extension.swift"; sourceTree = "<group>"; };
+		4BE9292226C4242E00DBAFA7 /* Response+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Response+Extension.swift"; sourceTree = "<group>"; };
 		56ADB606200FBC3BD32B5C2B /* Pods_Networking_NetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking_NetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A529A9230E21858D00277E4 /* Pods-Networking-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking-NetworkingTests.release.xcconfig"; path = "Target Support Files/Pods-Networking-NetworkingTests/Pods-Networking-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
 		B02709F5EE583E1701D521F8 /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +125,7 @@
 				4B0B639326BDA7B100131553 /* Handler */,
 				4B0B639226BDA7AB00131553 /* Targets */,
 				4B0B639126BDA79900131553 /* DataSources */,
+				4BE9290A26C40E0500DBAFA7 /* Extensions */,
 				4B0B630026BD66C000131553 /* Networking.h */,
 				4B0B630126BD66C000131553 /* Info.plist */,
 			);
@@ -136,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				4B0B639A26BDA86500131553 /* AuthRemoteDataSource.swift */,
+				4BE9290426C3FCD700DBAFA7 /* EnterprisesRemoteDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -145,6 +155,7 @@
 			children = (
 				4B0B639426BDA81B00131553 /* AppTarget.swift */,
 				4B0B639626BDA83200131553 /* AuthTarget.swift */,
+				4BE9290826C3FE7100DBAFA7 /* EnterprisesTarget.swift */,
 			);
 			path = Targets;
 			sourceTree = "<group>";
@@ -155,6 +166,15 @@
 				4B0B639826BDA84900131553 /* UserSessionRequestHandler.swift */,
 			);
 			path = Handler;
+			sourceTree = "<group>";
+		};
+		4BE9290A26C40E0500DBAFA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BE9290B26C40E2800DBAFA7 /* Task+Extension.swift */,
+				4BE9292226C4242E00DBAFA7 /* Response+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7D06DCB6D1ECA42BB7CAAF32 /* Pods */ = {
@@ -358,9 +378,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0B639726BDA83200131553 /* AuthTarget.swift in Sources */,
+				4BE9290926C3FE7100DBAFA7 /* EnterprisesTarget.swift in Sources */,
+				4BE9292326C4242E00DBAFA7 /* Response+Extension.swift in Sources */,
+				4BE9290526C3FCD700DBAFA7 /* EnterprisesRemoteDataSource.swift in Sources */,
 				4B0B639526BDA81B00131553 /* AppTarget.swift in Sources */,
 				4B0B639B26BDA86500131553 /* AuthRemoteDataSource.swift in Sources */,
 				4B0B639926BDA84900131553 /* UserSessionRequestHandler.swift in Sources */,
+				4BE9290C26C40E2800DBAFA7 /* Task+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

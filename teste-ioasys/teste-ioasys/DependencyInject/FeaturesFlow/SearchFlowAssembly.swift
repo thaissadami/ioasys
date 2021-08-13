@@ -17,5 +17,6 @@ class SearchFlowAssembly: Assembly {
             searchCoordinator
         }
         container.autoregister(SearchViewPresenting.self, initializer: SearchPresenter.init)
+        container.autoregister(DetailEnterpriseViewPresenting.self, initializer: DetailEnterprisePresenter.init)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  CompaniesResponseDTO.swift
+//  EnterprisesResponseDTO.swift
 //  AppData
 //
 //  Created by Thais Sadami on 10/08/21.

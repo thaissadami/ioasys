@@ -23,12 +23,12 @@ class DetailEnterpriseViewModel: NetworkAPI{
     }
     
     override func successResult(response:AFDataResponse<Data>) {
-        do {
-            let response = try JSONDecoder().decode(EnterpriseResponse.self, from: response.data ?? Data())
-            self.viewController.enterprise = response.enterprise
-        } catch {
-            print(error.localizedDescription)
-        }
+//        do {
+//            let response = try JSONDecoder().decode(EnterpriseResponse.self, from: response.data ?? Data())
+//            self.viewController.enterprise = response.enterprise
+//        } catch {
+//            print(error.localizedDescription)
+//        }
         
 //        viewController.stopLoading()
     }

@@ -8,9 +8,10 @@
 //
 
 import UIKit
+import Domain
 
 protocol SearchCoordinatorDelegate: AnyObject {
-    func didShowDetail()
+    func didShowDetailEnterprise(_ enterprise: Enterprise)
 }
 
 class SearchCoordinator: Coordinator {
@@ -38,7 +39,8 @@ class SearchCoordinator: Coordinator {
 }
 
 extension SearchCoordinator: SearchSceneCoordinating {
-    func showDetails() {
-        coordinatorDelegate?.didShowDetail()
+    
+    func showDetailEnterprise(_ enterprise: Enterprise) {
+        coordinatorDelegate?.didShowDetailEnterprise(enterprise)
     }
 }

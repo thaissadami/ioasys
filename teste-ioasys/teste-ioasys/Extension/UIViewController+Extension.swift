@@ -19,5 +19,14 @@ extension UIViewController {
         let alert = UIAlertController.successAlert(message: message)
         present(alert, animated: true, completion: nil)
     }
+    
+    func setTapToEndEditing() {
+        let tapToHideKeyboard = UITapGestureRecognizer(target: self, action: #selector(endEditingForced))
+        self.view.addGestureRecognizer(tapToHideKeyboard)
+    }
+
+    @objc private func endEditingForced() {
+        self.view.endEditing(true)
+    }
 }
 

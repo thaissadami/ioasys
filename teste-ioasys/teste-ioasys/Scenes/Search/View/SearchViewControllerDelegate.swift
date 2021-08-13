@@ -12,7 +12,7 @@ import Material
 extension SearchViewController: TextFieldDelegate, TableViewDelegate, TableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        self.result.count
+        self.resultEnterprises.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -20,14 +20,12 @@ extension SearchViewController: TextFieldDelegate, TableViewDelegate, TableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: SearchCell.reusableIdentifier, for: indexPath)
         
         if let cell = cell as? SearchCell {
-            let enterprise = result[indexPath.row]
+            let enterprise = resultEnterprises[indexPath.row]
             cell.setup(with:enterprise.photo ?? "", name: enterprise.enterpriseName ?? "")
         }
 
         return cell
     }
-    
-    
 
     // MARK: DataSource
 
@@ -39,8 +37,8 @@ extension SearchViewController: TextFieldDelegate, TableViewDelegate, TableViewD
     // MARK: Delegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let enterprise = result[indexPath.row]
-        openDetailEnterprise(enterprise: enterprise)
+        let enterprise = resultEnterprises[indexPath.row]
+        self.presenter.showDetailEnterprise(enterprise)
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
