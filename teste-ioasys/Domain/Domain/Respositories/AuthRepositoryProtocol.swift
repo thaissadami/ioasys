@@ -10,5 +10,5 @@ import Foundation
 
 public protocol AuthRepositoryProtocol: AnyObject {
 
-    func login(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ())
+    func login(_ form: LoginForm, completion: @escaping ResultCompletion<LoginResponse>)
 }

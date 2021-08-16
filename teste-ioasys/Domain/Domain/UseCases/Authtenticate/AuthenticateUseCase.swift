@@ -10,7 +10,7 @@ import Foundation
 
 public protocol AuthenticateUseCaseProtocol: AnyObject {
 
-    func execute(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ())
+    func execute(_ form: LoginForm, completion: @escaping ResultCompletion<LoginResponse>)
 }
 
 public class AuthenticateUseCase {
@@ -24,7 +24,7 @@ public class AuthenticateUseCase {
 
 extension AuthenticateUseCase: AuthenticateUseCaseProtocol {
 
-    public func execute(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ()) {
+    public func execute(_ form: LoginForm, completion: @escaping ResultCompletion<LoginResponse>) {
         
         //Domain cria um cara para expor (protocolo 'authRepository')
         authRepository.login(form, completion: completion)

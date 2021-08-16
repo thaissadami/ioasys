@@ -26,6 +26,10 @@ def uiPods
 #  pod 'IQKeyboardManagerSwift'
 end
 
+def storagePods
+  pod 'KeychainAccess'
+end
+
 target 'teste-ioasys' do
   project 'teste-ioasys'
   
@@ -33,6 +37,7 @@ target 'teste-ioasys' do
   diPods
   networkingPods
   uiPods
+  storagePods
   
   target 'teste-ioasysTests' do
     inherit! :search_paths
@@ -64,6 +69,7 @@ target 'Storage' do
   project 'Storage/Storage'
 
   sharedPods
+  storagePods
 
   target 'StorageTests'
 end

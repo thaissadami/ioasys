@@ -10,30 +10,46 @@ import Domain
 
 public class AuthRepository {
 
-    private let localDatSource: AuthLocalDataSourceProtocol
-    private let remoteDatSource: AuthRemoteDataSourceProtocol
+    private let localDataSource: AuthLocalDataSourceProtocol
+    private let remoteDataSource: AuthRemoteDataSourceProtocol
 
-    public init(localDatSource: AuthLocalDataSourceProtocol, remoteDatSource: AuthRemoteDataSourceProtocol) {
-        self.localDatSource = localDatSource
-        self.remoteDatSource = remoteDatSource
+    public init(localDataSource: AuthLocalDataSourceProtocol, remoteDataSource: AuthRemoteDataSourceProtocol) {
+        self.localDataSource = localDataSource
+        self.remoteDataSource = remoteDataSource
     }
 }
 
 extension AuthRepository: Domain.AuthRepositoryProtocol {
 
-    public func login(_ form: LoginForm, completion: @escaping (Result<LoginResponse, Error>) -> ()) {
+    public func login(_ form: LoginForm, completion: @escaping ResultCompletion<LoginResponse>) {
         //AppData não conhece o Storage, criado protocol para acessar storage
-        remoteDatSource.login(form) { [weak self] result in
-            guard let self = self else {
-                return
-            }
+        remoteDataSource.login(form) { result in
             switch result {
             case .success(let response):
-                self.localDatSource.save(response.investor, completion: { _ in })
-                completion(.success(response))
+                do {
+                    
+                    try self.localDataSource.saveClient("")
+                    
+                    completion(.success(response))
+                } catch let error {
+                    completion(.failure(error))
+                }
             case .failure(let error):
                 completion(.failure(error))
             }
         }
+        
+//        remoteDataSource.login(form) { [weak self] result in
+//            guard let self = self else {
+//                return
+//            }
+//            switch result {
+//            case .success(let response):
+//                try self.localDataSource.save(response.investor)
+//                completion(.success(response))
+//            case .failure(let error):
+//                completion(.failure(error))
+//            }
+//        }
     }
 }

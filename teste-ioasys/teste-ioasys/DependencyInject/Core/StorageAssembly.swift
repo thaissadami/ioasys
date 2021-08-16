@@ -15,6 +15,7 @@ class StorageAssembly: Assembly {
     func assemble(container: Container) {
 
         container.autoregister(AppData.AuthLocalDataSourceProtocol.self, initializer: Storage.AuthLocalDataSource.init)
-    
+        container.register(KeychainStorage.self) { _ in KeychainStorage() }
+        container.register(UserDefaultsStorage.self) { _ in UserDefaultsStorage(userDefaults: .standard) }
     }
 }

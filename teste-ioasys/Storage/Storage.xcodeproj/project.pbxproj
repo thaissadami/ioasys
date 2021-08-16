@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,7 +14,19 @@
 		4B0B636926BD741500131553 /* AppData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B636726BD741500131553 /* AppData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B0B637326BD743700131553 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637226BD743700131553 /* Domain.framework */; };
 		4B0B637426BD743700131553 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0B637226BD743700131553 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B136FE326CAF432002DBA40 /* UserDefaultsStoring.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4BE9292A26C6F45100DBAFA7 /* UserDefaultsStoring.swift */; };
+		4B136FE426CAF432002DBA40 /* Keyable.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4BE9292C26C6F47A00DBAFA7 /* Keyable.swift */; };
+		4B136FE526CAF432002DBA40 /* KeychainStoring.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4BE9293026C6F4C600DBAFA7 /* KeychainStoring.swift */; };
+		4B136FE626CAF432002DBA40 /* UserDefaultsStorage.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4BE9292626C6F3CC00DBAFA7 /* UserDefaultsStorage.swift */; };
+		4B136FE726CAF432002DBA40 /* KeychainStorage.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4BE9292E26C6F4B000DBAFA7 /* KeychainStorage.swift */; };
+		4B136FE826CAF432002DBA40 /* AuthLocalDataSource.swift in Resources */ = {isa = PBXBuildFile; fileRef = 4B4FF64626BDBD66001FBD92 /* AuthLocalDataSource.swift */; };
+		4B136FE926CAF493002DBA40 /* Pods_Storage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 32983EC59A29CA4300B6D443 /* Pods_Storage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B4FF64726BDBD66001FBD92 /* AuthLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4FF64626BDBD66001FBD92 /* AuthLocalDataSource.swift */; };
+		4BE9292726C6F3CC00DBAFA7 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292626C6F3CC00DBAFA7 /* UserDefaultsStorage.swift */; };
+		4BE9292B26C6F45100DBAFA7 /* UserDefaultsStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292A26C6F45100DBAFA7 /* UserDefaultsStoring.swift */; };
+		4BE9292D26C6F47A00DBAFA7 /* Keyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292C26C6F47A00DBAFA7 /* Keyable.swift */; };
+		4BE9292F26C6F4B000DBAFA7 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292E26C6F4B000DBAFA7 /* KeychainStorage.swift */; };
+		4BE9293126C6F4C600DBAFA7 /* KeychainStoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9293026C6F4C600DBAFA7 /* KeychainStoring.swift */; };
 		618BA06B5C57DC39D138565E /* Pods_Storage_StorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6981880DCFB543374AF30BA1 /* Pods_Storage_StorageTests.framework */; };
 		F3B853DB580D8E2DEC914C01 /* Pods_Storage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32983EC59A29CA4300B6D443 /* Pods_Storage.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4B136FE926CAF493002DBA40 /* Pods_Storage.framework in Embed Frameworks */,
 				4B0B637426BD743700131553 /* Domain.framework in Embed Frameworks */,
 				4B0B636926BD741500131553 /* AppData.framework in Embed Frameworks */,
 			);
@@ -56,6 +69,11 @@
 		4B0B636726BD741500131553 /* AppData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0B637226BD743700131553 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B4FF64626BDBD66001FBD92 /* AuthLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSource.swift; sourceTree = "<group>"; };
+		4BE9292626C6F3CC00DBAFA7 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		4BE9292A26C6F45100DBAFA7 /* UserDefaultsStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsStoring.swift; sourceTree = "<group>"; };
+		4BE9292C26C6F47A00DBAFA7 /* Keyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyable.swift; sourceTree = "<group>"; };
+		4BE9292E26C6F4B000DBAFA7 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		4BE9293026C6F4C600DBAFA7 /* KeychainStoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStoring.swift; sourceTree = "<group>"; };
 		53E9EF8629951FDFE21EBB88 /* Pods-Storage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage.debug.xcconfig"; path = "Target Support Files/Pods-Storage/Pods-Storage.debug.xcconfig"; sourceTree = "<group>"; };
 		5E37607E303CB2CB0F360675 /* Pods-Storage-StorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Storage-StorageTests.debug.xcconfig"; path = "Target Support Files/Pods-Storage-StorageTests/Pods-Storage-StorageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6981880DCFB543374AF30BA1 /* Pods_Storage_StorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Storage_StorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +126,7 @@
 		4B0B634F26BD735300131553 /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				4BE9292826C6F3D000DBAFA7 /* Storages */,
 				4B4FF64526BDBD47001FBD92 /* DataSources */,
 				4B0B635026BD735300131553 /* Storage.h */,
 				4B0B635126BD735300131553 /* Info.plist */,
@@ -130,6 +149,26 @@
 				4B4FF64626BDBD66001FBD92 /* AuthLocalDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		4BE9292826C6F3D000DBAFA7 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				4BE9292926C6F44300DBAFA7 /* Protocols */,
+				4BE9292626C6F3CC00DBAFA7 /* UserDefaultsStorage.swift */,
+				4BE9292E26C6F4B000DBAFA7 /* KeychainStorage.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		4BE9292926C6F44300DBAFA7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4BE9292A26C6F45100DBAFA7 /* UserDefaultsStoring.swift */,
+				4BE9292C26C6F47A00DBAFA7 /* Keyable.swift */,
+				4BE9293026C6F4C600DBAFA7 /* KeychainStoring.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		5839EF116E842055FA50F966 /* Pods */ = {
@@ -197,6 +236,7 @@
 				4B0B635226BD735300131553 /* Sources */,
 				4B0B635326BD735300131553 /* Frameworks */,
 				4B0B635426BD735300131553 /* Resources */,
+				DAA42C0CB1305ED2FF550AB3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +290,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B136FE326CAF432002DBA40 /* UserDefaultsStoring.swift in Resources */,
+				4B136FE426CAF432002DBA40 /* Keyable.swift in Resources */,
+				4B136FE526CAF432002DBA40 /* KeychainStoring.swift in Resources */,
+				4B136FE626CAF432002DBA40 /* UserDefaultsStorage.swift in Resources */,
+				4B136FE726CAF432002DBA40 /* KeychainStorage.swift in Resources */,
+				4B136FE826CAF432002DBA40 /* AuthLocalDataSource.swift in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +353,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DAA42C0CB1305ED2FF550AB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Storage-StorageTests/Pods-Storage-StorageTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Storage-StorageTests/Pods-Storage-StorageTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Storage-StorageTests/Pods-Storage-StorageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -314,6 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE9292726C6F3CC00DBAFA7 /* UserDefaultsStorage.swift in Sources */,
+				4BE9292D26C6F47A00DBAFA7 /* Keyable.swift in Sources */,
+				4BE9292F26C6F4B000DBAFA7 /* KeychainStorage.swift in Sources */,
+				4BE9292B26C6F45100DBAFA7 /* UserDefaultsStoring.swift in Sources */,
+				4BE9293126C6F4C600DBAFA7 /* KeychainStoring.swift in Sources */,
 				4B4FF64726BDBD66001FBD92 /* AuthLocalDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,12 @@ import Domain
 
 public class EnterprisesRepository {
 
+    private let localDataSource: EnterprisesLocalDataSourceProtocol
     private let remoteDataSource: EnterprisesRemoteDataSourceProtocol
 
-    public init(remoteDataSource: EnterprisesRemoteDataSourceProtocol) {
+    public init(remoteDataSource: EnterprisesRemoteDataSourceProtocol, localDataSource: EnterprisesLocalDataSourceProtocol) {
         self.remoteDataSource = remoteDataSource
+        self.localDataSource = localDataSource
     }
 }
 
@@ -21,8 +23,18 @@ extension EnterprisesRepository: Domain.EnterprisesRepositoryProtocol {
     public func getEnterprisesWithName(request: EnterpriseRequest, completion: @escaping (ResultCompletion<SearchResponse>)) {
         
         do {
-            let requestDTO = EnterprisesRequestDTO(name: request.name)
-            remoteDataSource.getEnterprises(request: requestDTO) { result in
+            let request = try localDataSource.getEnterprisesRequest()
+//            remoteDataSource.getEnterprises(request: request) { result in
+//                self.handle(result: result, completion: { result in
+//                    result.successHandler { response in
+////                        completion(.success(response.toDomain))
+//                    }
+//                    result.failureHandler { error in
+//                        completion(.failure(error))
+//                    }
+//                })
+//            }
+            remoteDataSource.getEnterprises(request: request) { result in
                 completion(result.map({ newSuccess in
                     SearchResponse(enterprises: newSuccess.map({ $0.toDomain }))
                 }))

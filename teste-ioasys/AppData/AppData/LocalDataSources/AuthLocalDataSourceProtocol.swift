@@ -10,5 +10,8 @@ import Domain
 
 public protocol AuthLocalDataSourceProtocol: AnyObject {
 
-    func save(_ investor: Investor, completion: @escaping (Result<Void, Error>) -> ())
+//    func save(investor: Investor) throws
+    func saveToken(_ token: String) throws
+    func saveUid(_ uid: String) throws
+    func saveClient(_ client: String) throws
 }
