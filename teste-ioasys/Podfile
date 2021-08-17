@@ -1,26 +1,83 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+source 'https://cdn.cocoapods.org/'
+source 'git@bitbucket.org:ioasys/ioasys-specs.git'
 
-target 'teste-ioasys' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+platform :ios, '13.0'
+inhibit_all_warnings!
+use_frameworks!
+workspace 'teste-ioasys'
 
-  # Pods for teste-ioasys
+def sharedPods
+  pod 'SwiftLint'
+end
 
+def diPods
+  pod 'Swinject', '~> 2.7.1'
+  pod 'SwinjectAutoregistration', '~> 2.7.0'
+end
+
+def networkingPods
+  pod 'OxeNetworking'
+end
+
+def uiPods
   pod 'SnapKit', '~> 5.0'
   pod 'Material', '~> 2.16.4'
-  pod 'Alamofire', '~> 5.4.1'
-  pod 'SwiftyJSON', '~> 5.0'
-#  pod 'KeychainSwift', '~> 11.0.0'
   pod 'SDWebImage', '~> 5.11'
+#  pod 'IQKeyboardManagerSwift'
+end
 
+def storagePods
+  pod 'KeychainAccess'
+end
+
+target 'teste-ioasys' do
+  project 'teste-ioasys'
+  
+  sharedPods
+  diPods
+  networkingPods
+  uiPods
+  storagePods
+  
   target 'teste-ioasysTests' do
     inherit! :search_paths
-    # Pods for testing
   end
 
   target 'teste-ioasysUITests' do
     # Pods for testing
   end
+end
 
+target 'Domain' do
+  project 'Domain/Domain'
+
+  sharedPods
+
+  target 'DomainTests'
+end
+
+target 'Networking' do
+  project 'Networking/Networking'
+
+  sharedPods
+  networkingPods
+
+  target 'NetworkingTests'
+end
+
+target 'Storage' do
+  project 'Storage/Storage'
+
+  sharedPods
+  storagePods
+
+  target 'StorageTests'
+end
+
+target 'AppData' do
+  project 'AppData/AppData'
+
+  sharedPods
+
+  target 'AppDataTests'
 end
