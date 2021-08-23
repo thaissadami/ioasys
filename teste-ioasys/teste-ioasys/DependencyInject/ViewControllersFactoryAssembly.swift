@@ -20,9 +20,5 @@ class ViewControllersFactoryAssembly: Assembly {
         container.register(SearchFactory.self) { resolver in
             return SearchFactoryImplementation(resolver: resolver)
         }
-        
-        container.register(DetailEnterpriseFactory.self) { resolver in
-            return DetailEnterpriseFactoryImplementation(resolver: resolver)
-        }
     }
 }

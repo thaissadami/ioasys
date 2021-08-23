@@ -10,7 +10,7 @@ import Material
 import Domain
 
 protocol DetailEnterpriseViewPresenting {
-    func getDetailEnterprise(idEnterprise: Int)
+//    func getDetailEnterprise(idEnterprise: Int)
 }
 
 class DetailEnterpriseViewController: UIViewController {
@@ -19,7 +19,6 @@ class DetailEnterpriseViewController: UIViewController {
     private let presenter: DetailEnterpriseViewPresenting
     
     open var dataSourceItems = [DataSourceItem]()
-//    public var detailEnterpriseViewModel: DetailEnterpriseViewModel?
     public var loadingCustom: ActivityIndicatorCustom! = nil
 //    public var enterprise: Enterprise?
     

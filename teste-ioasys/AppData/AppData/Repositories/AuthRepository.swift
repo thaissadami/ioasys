@@ -27,8 +27,8 @@ extension AuthRepository: Domain.AuthRepositoryProtocol {
             switch result {
             case .success(let response):
                 do {
-                    
-                    try self.localDataSource.saveClient("")
+                    let header = HeaderEnterprisesRequestDTO(token: response.token ?? "", uid: response.uid ?? "", client: response.client ?? "")
+                    try self.localDataSource.saveHeader(header)
                     
                     completion(.success(response))
                 } catch let error {
@@ -38,18 +38,5 @@ extension AuthRepository: Domain.AuthRepositoryProtocol {
                 completion(.failure(error))
             }
         }
-        
-//        remoteDataSource.login(form) { [weak self] result in
-//            guard let self = self else {
-//                return
-//            }
-//            switch result {
-//            case .success(let response):
-//                try self.localDataSource.save(response.investor)
-//                completion(.success(response))
-//            case .failure(let error):
-//                completion(.failure(error))
-//            }
-//        }
     }
 }

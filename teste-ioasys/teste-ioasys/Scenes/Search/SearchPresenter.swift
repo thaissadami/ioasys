@@ -10,7 +10,7 @@ import Domain
 
 protocol SearchViewable: ViewLoadable {
     func showAlert(message: String)
-    func setEnterprises(_ resultEnterprises: [Enterprise])
+    func setEnterprises()
 }
 
 protocol SearchSceneCoordinating {
@@ -22,6 +22,7 @@ class SearchPresenter {
     private weak var view: SearchViewable?
     private let coodinator: SearchSceneCoordinating
     private let enterprisesUseCase: EnterprisesUseCaseProtocol
+    internal var resultEnterprises: [Enterprise] = []
 
     init(coordinator: SearchSceneCoordinating, enterprisesUseCase: EnterprisesUseCaseProtocol) {
         self.coodinator = coordinator
@@ -40,7 +41,7 @@ extension SearchPresenter: SearchViewPresenting {
     }
     
     func getEnterprisesWithName(_ name: String) {
-        let request = EnterpriseRequest(name: name)
+        let request = EnterprisesRequest(name: name)
         
         self.view?.showLoading()
         enterprisesUseCase.execute(request: request) { [weak self] result in
@@ -51,7 +52,8 @@ extension SearchPresenter: SearchViewPresenting {
             switch result {
             case .success:
                 result.successHandler { response in
-                    self.view?.setEnterprises(response.enterprises)
+                    self.resultEnterprises = response.enterprises
+                    self.view?.setEnterprises()
                 }
             case .failure(let error):
                 self.view?.showAlert(message: error.localizedDescription)

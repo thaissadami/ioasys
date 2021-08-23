@@ -25,7 +25,7 @@ class SearchCell: UITableViewCell, CodeView {
     }
     
     func setup(with urlImage: String, name: String) {
-        let url = "\(APIEnvironment.production.baseURL())\(urlImage)"
+        let url = "\("https://empresas.ioasys.com.br/")\(urlImage)"
         
         img.sd_setImage(with: URL(string: url), placeholderImage: UIImage(named: "placeholder"), options: SDWebImageOptions(rawValue: 0), context: nil)
         lbName.text = name.uppercased()

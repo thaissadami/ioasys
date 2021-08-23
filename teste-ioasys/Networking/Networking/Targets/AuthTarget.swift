@@ -16,7 +16,7 @@ public enum AuthTarget {
 extension AuthTarget: AppTarget {
 
     public var path: String {
-        return "/users/auth/sign_in"
+        return "users/auth/sign_in"
     }
 
     public var method: Moya.Method {

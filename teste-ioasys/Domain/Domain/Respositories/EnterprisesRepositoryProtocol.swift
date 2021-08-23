@@ -9,6 +9,6 @@ import Foundation
 
 public protocol EnterprisesRepositoryProtocol: AnyObject {
 
-    func getEnterprisesWithName(request: EnterpriseRequest, completion: @escaping (ResultCompletion<SearchResponse>))
+    func getEnterprisesWithName(request: EnterprisesRequest, completion: @escaping (ResultCompletion<SearchResponse>))
 }
 

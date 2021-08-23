@@ -19,10 +19,10 @@ protocol DetailEnterpriseSceneCoordinating {
 class DetailEnterprisePresenter {
 
     private weak var view: DetailEnterpriseViewable?
-    private let coodinator: DetailEnterpriseSceneCoordinating
+//    private let coodinator: DetailEnterpriseSceneCoordinating
 
-    init(coordinator: DetailEnterpriseSceneCoordinating) {
-        self.coodinator = coordinator
+    init() {
+        
     }
 
     func attach(_ view: DetailEnterpriseViewable) {
@@ -35,10 +35,6 @@ extension DetailEnterprisePresenter: DetailEnterpriseViewPresenting {
 
     func getDetailEnterprise(idEnterprise: Int) {
         view?.showAlert(message: "TODO - Integration")
-    }
-
-    func showDetails() {
-        
     }
 }
 

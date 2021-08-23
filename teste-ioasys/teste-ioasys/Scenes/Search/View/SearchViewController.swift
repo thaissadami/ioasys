@@ -10,6 +10,9 @@ import Material
 import Domain
 
 protocol SearchViewPresenting {
+    
+    var resultEnterprises: [Enterprise] { get }
+    
     func getEnterprisesWithName(_ name: String)
     func showDetailEnterprise(_ enterprise: Enterprise)
 }
@@ -20,13 +23,11 @@ class SearchViewController: UIViewController {
     let presenter: SearchViewPresenting
 
     open var dataSourceItems = [DataSourceItem]()
-    public var searchViewModel: SearchViewModel?
     public var loadingCustom: ActivityIndicatorCustom! = nil
     
-    public var resultEnterprises: [Enterprise] = [] {
+    public var listEnterprises: [Enterprise] = [] {
         didSet {
             self.mainView.tableView.reloadData()
-            setEnterprises(resultEnterprises)
         }
     }
     
@@ -57,8 +58,6 @@ class SearchViewController: UIViewController {
         loadingCustom = ActivityIndicatorCustom(viewController: self)
         loadingCustom.bg.backgroundColor = .clear
         
-        searchViewModel = SearchViewModel(viewController: self)
-        
         self.mainView.tableView.delegate = self
         self.mainView.tableView.dataSource = self
         self.mainView.tableView.register(SearchCell.self, forCellReuseIdentifier: SearchCell.reusableIdentifier)
@@ -86,8 +85,7 @@ class SearchViewController: UIViewController {
     }
     
     @objc func searchEnterprise(){
-        showLoading()
-        searchViewModel!.getEnterprisesWithName(text: mainView.tfSearch.text ?? "")
+        presenter.getEnterprisesWithName(mainView.tfSearch.text ?? "")
     }
     
     
@@ -133,17 +131,21 @@ extension SearchViewController: SearchViewable, IndicatorProtocol {
 
     }
     
-    func setEnterprises(_ resultEnterprises: [Enterprise]) {
-        if resultEnterprises.count > 0 {
+    func setEnterprises() {
+        
+        let result = self.presenter.resultEnterprises
+        if result.count > 0 {
             mainView.tableView.isHidden = false
             mainView.lbResult.isHidden = false
             mainView.lbEmpty.isHidden = true
             
-            if resultEnterprises.count == 1 {
-                mainView.lbResult.text = String(resultEnterprises.count) + " resultado encontrado"
+            if result.count == 1 {
+                mainView.lbResult.text = String(result.count) + " resultado encontrado"
             }else{
-                mainView.lbResult.text = String(resultEnterprises.count) + " resultados encontrados"
+                mainView.lbResult.text = String(result.count) + " resultados encontrados"
             }
+            
+            self.listEnterprises = result
             
         }else{
             mainView.tableView.isHidden = true

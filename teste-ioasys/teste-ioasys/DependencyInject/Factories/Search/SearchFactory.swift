@@ -12,4 +12,5 @@ import Swinject
 protocol SearchFactory: DependencyFactory {
 
     func makeSearchViewController() -> SearchViewController
+    func makeDetailEnterpriseViewController() -> DetailEnterpriseViewController
 }

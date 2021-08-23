@@ -11,17 +11,19 @@ import Moya
 
 enum EnterprisesTarget {
 
-    case enterprisesList(EnterprisesRequestDTO)
+    case enterprisesList(HeaderEnterprisesRequestDTO, EnterprisesRequestDTO)
 }
 
 extension EnterprisesTarget: AppTarget {
 
     var path: String {
-        "enterprise"
+        "/enterprises"
     }
 
     var method: Moya.Method {
-        .post
+        switch self {
+        case .enterprisesList: return .get
+        }
     }
 
     var sampleData: Data {
@@ -30,15 +32,15 @@ extension EnterprisesTarget: AppTarget {
 
     var task: Task {
         switch self {
-        case .enterprisesList(let request):
+        case .enterprisesList(_, let request):
             return .requestPercentParameters(parameters: request.parameters, encoding: QueryArrayEncoding.default)
         }
     }
 
     public var headers: Headers {
         switch self {
-        case .enterprisesList:
-            return ["Content-Type": "application/x-www-form-urlencoded"]
+        case .enterprisesList(let header, _):
+            return ["Content-Type": "application/json", "access-token": header.token, "uid": header.uid, "client": header.client]
         }
     }
 }

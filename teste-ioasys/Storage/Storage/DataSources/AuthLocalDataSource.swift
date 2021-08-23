@@ -18,22 +18,21 @@ public class AuthLocalDataSource {
 }
 
 extension AuthLocalDataSource: AppData.AuthLocalDataSourceProtocol {
-//    public func save(investor: Investor) throws {
-//        let data = try JSONEncoder().encode(investor)
-//        try keychain.set(data, keyable: .investor)
-//    }
-    
-    public func saveToken(_ token: String) throws {
-        try keychain.set(token, keyable: .token)
-    }
-
-    public func saveUid(_ uid: String) throws {
-        try keychain.set(uid, keyable: .uid)
-    }
-
-    public func saveClient(_ client: String) throws {
-        try keychain.set(client, keyable: .client)
+    public func saveHeader(_ header: HeaderEnterprisesRequestDTO) throws {
+        let data = try JSONEncoder().encode(header)
+        try keychain.set(data, keyable: .header)
     }
     
+    public func getHeader() throws -> HeaderEnterprisesRequestDTO {
+        
+        
+        let header = try? keychain.getData(keyable: .header)
+        guard let data = try? JSONDecoder().decode(HeaderEnterprisesRequestDTO.self, from: header ?? Data())
+        else{
+            return HeaderEnterprisesRequestDTO(token: "", uid: "", client: "")
+        }
+        
+        return data
+    }
     
 }

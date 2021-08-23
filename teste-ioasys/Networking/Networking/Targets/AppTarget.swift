@@ -14,7 +14,7 @@ public protocol AppTarget: SampleHeadersReturning, HigherLayerHeadersSpecifyable
 extension AppTarget {
 
     public var baseURL: URL {
-        return URL(string: "https://empresas.ioasys.com.br/api/v1")!
+        return URL(string: "https://empresas.ioasys.com.br/api/v1/")!
     }
 
     public var specificHeaderTypes: [HeaderSpecifying] {

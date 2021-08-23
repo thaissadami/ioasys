@@ -22,13 +22,11 @@ public class KeychainStorage: KeychainStoring {
     public enum ValueKeyable: String, Keyable, CaseIterable {
 
         /// String
-        case token
-        case uid
-        case client
         case email
         case password
         
         /// Data
+        case header
         case investor
 
         public var key: String {

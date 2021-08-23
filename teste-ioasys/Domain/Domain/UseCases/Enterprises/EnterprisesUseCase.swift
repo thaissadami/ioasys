@@ -9,7 +9,7 @@ import Foundation
 
 public protocol EnterprisesUseCaseProtocol: AnyObject {
 
-    func execute(request: EnterpriseRequest, completion: @escaping (Result<SearchResponse, Error>) -> ())
+    func execute(request: EnterprisesRequest, completion: @escaping (Result<SearchResponse, Error>) -> ())
 }
 
 public class EnterprisesUseCase {
@@ -23,7 +23,7 @@ public class EnterprisesUseCase {
 
 extension EnterprisesUseCase: EnterprisesUseCaseProtocol {
     
-    public func execute(request: EnterpriseRequest, completion: @escaping (Result<SearchResponse, Error>) -> ()) {
+    public func execute(request: EnterprisesRequest, completion: @escaping (Result<SearchResponse, Error>) -> ()) {
         repository.getEnterprisesWithName(request: request, completion: completion)
     }
 }

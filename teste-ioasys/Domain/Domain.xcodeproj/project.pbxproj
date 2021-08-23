@@ -22,14 +22,15 @@
 		4B0B638326BD787B00131553 /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638226BD787B00131553 /* Investor.swift */; };
 		4B0B638526BD788500131553 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638426BD788500131553 /* LoginResponse.swift */; };
 		4B0B638826BD78BC00131553 /* AuthRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638726BD78BC00131553 /* AuthRepositoryProtocol.swift */; };
+		4B136FF426CC4579002DBA40 /* HeaderEnterprisesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FF326CC4579002DBA40 /* HeaderEnterprisesRequest.swift */; };
+		4B136FFA26CD54A4002DBA40 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FF926CD54A4002DBA40 /* SearchResponse.swift */; };
 		4BE928C926C178E400DBAFA7 /* EmptyValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928C826C178E400DBAFA7 /* EmptyValidator.swift */; };
 		4BE928D226C19AF500DBAFA7 /* ContainerValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928D126C19AF500DBAFA7 /* ContainerValidator.swift */; };
 		4BE928E026C2C9C400DBAFA7 /* RequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928DF26C2C9C400DBAFA7 /* RequestModel.swift */; };
 		4BE928F326C3111900DBAFA7 /* EnterprisesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928F226C3111900DBAFA7 /* EnterprisesUseCase.swift */; };
-		4BE928F726C3118000DBAFA7 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928F626C3118000DBAFA7 /* SearchResponse.swift */; };
 		4BE928F926C311ED00DBAFA7 /* EnterprisesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928F826C311ED00DBAFA7 /* EnterprisesRepositoryProtocol.swift */; };
 		4BE928FB26C3126B00DBAFA7 /* Enterprise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928FA26C3126B00DBAFA7 /* Enterprise.swift */; };
-		4BE9291D26C41CC000DBAFA7 /* EnterpriseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9291C26C41CC000DBAFA7 /* EnterpriseRequest.swift */; };
+		4BE9291D26C41CC000DBAFA7 /* EnterprisesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9291C26C41CC000DBAFA7 /* EnterprisesRequest.swift */; };
 		4BE9292126C420E100DBAFA7 /* Result+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9292026C420E100DBAFA7 /* Result+Extension.swift */; };
 		5D51A339C7F81BB34C137930 /* Pods_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2686075E6E633EB5A7733D /* Pods_Domain.framework */; };
 		E3DB7DA4F9B46EC1EE07BF52 /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABFD073134411A4BB8BE064 /* Pods_Domain_DomainTests.framework */; };
@@ -64,14 +65,15 @@
 		4B0B638226BD787B00131553 /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
 		4B0B638426BD788500131553 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		4B0B638726BD78BC00131553 /* AuthRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryProtocol.swift; sourceTree = "<group>"; };
+		4B136FF326CC4579002DBA40 /* HeaderEnterprisesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderEnterprisesRequest.swift; sourceTree = "<group>"; };
+		4B136FF926CD54A4002DBA40 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		4BE928C826C178E400DBAFA7 /* EmptyValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyValidator.swift; sourceTree = "<group>"; };
 		4BE928D126C19AF500DBAFA7 /* ContainerValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerValidator.swift; sourceTree = "<group>"; };
 		4BE928DF26C2C9C400DBAFA7 /* RequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModel.swift; sourceTree = "<group>"; };
 		4BE928F226C3111900DBAFA7 /* EnterprisesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesUseCase.swift; sourceTree = "<group>"; };
-		4BE928F626C3118000DBAFA7 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		4BE928F826C311ED00DBAFA7 /* EnterprisesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRepositoryProtocol.swift; sourceTree = "<group>"; };
 		4BE928FA26C3126B00DBAFA7 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
-		4BE9291C26C41CC000DBAFA7 /* EnterpriseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseRequest.swift; sourceTree = "<group>"; };
+		4BE9291C26C41CC000DBAFA7 /* EnterprisesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRequest.swift; sourceTree = "<group>"; };
 		4BE9292026C420E100DBAFA7 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
 		7E79A4744DAF497A917594F5 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
 		7EDD8E4545DC08047BFE0F85 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,8 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				4BE928FA26C3126B00DBAFA7 /* Enterprise.swift */,
-				4BE928F626C3118000DBAFA7 /* SearchResponse.swift */,
 				4B0B638226BD787B00131553 /* Investor.swift */,
+				4B136FF926CD54A4002DBA40 /* SearchResponse.swift */,
 				4B0B638426BD788500131553 /* LoginResponse.swift */,
 				4BE928DF26C2C9C400DBAFA7 /* RequestModel.swift */,
 			);
@@ -236,7 +238,8 @@
 		4BE9291E26C41CCE00DBAFA7 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				4BE9291C26C41CC000DBAFA7 /* EnterpriseRequest.swift */,
+				4BE9291C26C41CC000DBAFA7 /* EnterprisesRequest.swift */,
+				4B136FF326CC4579002DBA40 /* HeaderEnterprisesRequest.swift */,
 			);
 			path = Requests;
 			sourceTree = "<group>";
@@ -428,12 +431,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE928F726C3118000DBAFA7 /* SearchResponse.swift in Sources */,
 				4B0B62ED26BC7AA300131553 /* ResultExtensions.swift in Sources */,
 				4B0B62E726BC7A3D00131553 /* PasswordValidator.swift in Sources */,
+				4B136FF426CC4579002DBA40 /* HeaderEnterprisesRequest.swift in Sources */,
 				4BE928D226C19AF500DBAFA7 /* ContainerValidator.swift in Sources */,
 				4BE928F926C311ED00DBAFA7 /* EnterprisesRepositoryProtocol.swift in Sources */,
 				4B0B62D826BC6D4700131553 /* LoginFormValidateUseCaseError.swift in Sources */,
+				4B136FFA26CD54A4002DBA40 /* SearchResponse.swift in Sources */,
 				4BE9292126C420E100DBAFA7 /* Result+Extension.swift in Sources */,
 				4B0B638826BD78BC00131553 /* AuthRepositoryProtocol.swift in Sources */,
 				4BE928FB26C3126B00DBAFA7 /* Enterprise.swift in Sources */,
@@ -441,7 +445,7 @@
 				4B0B638026BD783A00131553 /* AuthenticateUseCase.swift in Sources */,
 				4BE928E026C2C9C400DBAFA7 /* RequestModel.swift in Sources */,
 				4B0B638526BD788500131553 /* LoginResponse.swift in Sources */,
-				4BE9291D26C41CC000DBAFA7 /* EnterpriseRequest.swift in Sources */,
+				4BE9291D26C41CC000DBAFA7 /* EnterprisesRequest.swift in Sources */,
 				4B0B62DA26BC6D5300131553 /* LoginFormValidateUseCaseProtocol.swift in Sources */,
 				4B0B638326BD787B00131553 /* Investor.swift in Sources */,
 				4B0B62E326BC78C100131553 /* EmailValidator.swift in Sources */,

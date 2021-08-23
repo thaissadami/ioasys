@@ -9,10 +9,10 @@ import Domain
 
 public class EnterprisesRepository {
 
-    private let localDataSource: EnterprisesLocalDataSourceProtocol
+    private let localDataSource: AuthLocalDataSourceProtocol
     private let remoteDataSource: EnterprisesRemoteDataSourceProtocol
 
-    public init(remoteDataSource: EnterprisesRemoteDataSourceProtocol, localDataSource: EnterprisesLocalDataSourceProtocol) {
+    public init(remoteDataSource: EnterprisesRemoteDataSourceProtocol, localDataSource: AuthLocalDataSourceProtocol) {
         self.remoteDataSource = remoteDataSource
         self.localDataSource = localDataSource
     }
@@ -20,21 +20,14 @@ public class EnterprisesRepository {
 
 extension EnterprisesRepository: Domain.EnterprisesRepositoryProtocol {
 
-    public func getEnterprisesWithName(request: EnterpriseRequest, completion: @escaping (ResultCompletion<SearchResponse>)) {
+    public func getEnterprisesWithName(request: EnterprisesRequest, completion: @escaping (ResultCompletion<SearchResponse>)) {
         
         do {
-            let request = try localDataSource.getEnterprisesRequest()
-//            remoteDataSource.getEnterprises(request: request) { result in
-//                self.handle(result: result, completion: { result in
-//                    result.successHandler { response in
-////                        completion(.success(response.toDomain))
-//                    }
-//                    result.failureHandler { error in
-//                        completion(.failure(error))
-//                    }
-//                })
-//            }
-            remoteDataSource.getEnterprises(request: request) { result in
+            let header = try localDataSource.getHeader()
+            let requestDTO = EnterprisesRequestDTO(name: request.name)
+            let headerDTO = HeaderEnterprisesRequestDTO(token: header.token, uid: header.uid, client: header.client)
+            
+            remoteDataSource.getEnterprises(header:headerDTO, request: requestDTO) { result in
                 completion(result.map({ newSuccess in
                     SearchResponse(enterprises: newSuccess.map({ $0.toDomain }))
                 }))

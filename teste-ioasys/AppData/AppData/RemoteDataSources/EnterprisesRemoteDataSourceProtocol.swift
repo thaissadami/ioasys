@@ -9,5 +9,5 @@ import Domain
 
 public protocol EnterprisesRemoteDataSourceProtocol: Any {
 
-    func getEnterprises(request: EnterprisesRequestDTO, completion: @escaping DataCompletion<[EnterprisesResponseDTO]>)
+    func getEnterprises(header: HeaderEnterprisesRequestDTO, request: EnterprisesRequestDTO, completion: @escaping DataCompletion<[EnterprisesResponseDTO]>)
 }

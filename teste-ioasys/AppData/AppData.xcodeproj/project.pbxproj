@@ -16,8 +16,9 @@
 		4B0B638B26BD79E800131553 /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638A26BD79E800131553 /* AuthRepository.swift */; };
 		4B0B638E26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638D26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift */; };
 		4B0B639026BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0B638F26BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift */; };
-		4B136FE226CAEBB4002DBA40 /* AuthResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FE126CAEBB4002DBA40 /* AuthResponseDTO.swift */; };
 		4B136FED26CAF9D2002DBA40 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FEC26CAF9D1002DBA40 /* LoginRequest.swift */; };
+		4B136FF026CBF82A002DBA40 /* InvestorResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FEF26CBF82A002DBA40 /* InvestorResponseDTO.swift */; };
+		4B136FF226CC245B002DBA40 /* HeaderEnterprisesRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B136FF126CC245B002DBA40 /* HeaderEnterprisesRequestDTO.swift */; };
 		4BE928E526C2CFAF00DBAFA7 /* DataCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928E426C2CFAF00DBAFA7 /* DataCompletion.swift */; };
 		4BE9290026C3166400DBAFA7 /* EnterprisesRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */; };
 		4BE9290226C3167600DBAFA7 /* EnterprisesResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */; };
@@ -67,8 +68,9 @@
 		4B0B638A26BD79E800131553 /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		4B0B638D26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRemoteDataSourceProtocol.swift; sourceTree = "<group>"; };
 		4B0B638F26BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalDataSourceProtocol.swift; sourceTree = "<group>"; };
-		4B136FE126CAEBB4002DBA40 /* AuthResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponseDTO.swift; sourceTree = "<group>"; };
 		4B136FEC26CAF9D1002DBA40 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		4B136FEF26CBF82A002DBA40 /* InvestorResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestorResponseDTO.swift; sourceTree = "<group>"; };
+		4B136FF126CC245B002DBA40 /* HeaderEnterprisesRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderEnterprisesRequestDTO.swift; sourceTree = "<group>"; };
 		4BE928E426C2CFAF00DBAFA7 /* DataCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCompletion.swift; sourceTree = "<group>"; };
 		4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRequestDTO.swift; sourceTree = "<group>"; };
 		4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesResponseDTO.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		4B0B632626BD732500131553 /* AppData */ = {
 			isa = PBXGroup;
 			children = (
+				4B136FEE26CBF818002DBA40 /* DTO */,
 				4BE928FD26C315DC00DBAFA7 /* DataTransferOutput */,
 				4BE928FC26C315C700DBAFA7 /* LocalDataSources */,
 				4B0B638C26BD79F200131553 /* RemoteDataSources */,
@@ -171,6 +174,14 @@
 			path = RemoteDataSources;
 			sourceTree = "<group>";
 		};
+		4B136FEE26CBF818002DBA40 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				4B136FEF26CBF82A002DBA40 /* InvestorResponseDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		4BE928FC26C315C700DBAFA7 /* LocalDataSources */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,7 +196,6 @@
 			children = (
 				4B136FEC26CAF9D1002DBA40 /* LoginRequest.swift */,
 				4BE928FE26C3164300DBAFA7 /* Enterprise */,
-				4B136FE126CAEBB4002DBA40 /* AuthResponseDTO.swift */,
 			);
 			path = DataTransferOutput;
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 			children = (
 				4BE928FF26C3166400DBAFA7 /* EnterprisesRequestDTO.swift */,
 				4BE9290126C3167600DBAFA7 /* EnterprisesResponseDTO.swift */,
+				4B136FF126CC245B002DBA40 /* HeaderEnterprisesRequestDTO.swift */,
 			);
 			path = Enterprise;
 			sourceTree = "<group>";
@@ -371,12 +382,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BE9290726C3FD2500DBAFA7 /* EnterprisesRemoteDataSourceProtocol.swift in Sources */,
+				4B136FF026CBF82A002DBA40 /* InvestorResponseDTO.swift in Sources */,
 				4B0B638E26BD7A0400131553 /* AuthRemoteDataSourceProtocol.swift in Sources */,
-				4B136FE226CAEBB4002DBA40 /* AuthResponseDTO.swift in Sources */,
 				4BE9291A26C41AC800DBAFA7 /* EnterprisesRepository.swift in Sources */,
 				4B0B639026BD7A0F00131553 /* AuthLocalDataSourceProtocol.swift in Sources */,
 				4BE9290026C3166400DBAFA7 /* EnterprisesRequestDTO.swift in Sources */,
 				4BE9292526C6F1CD00DBAFA7 /* EnterprisesLocalDataSourceProtocol.swift in Sources */,
+				4B136FF226CC245B002DBA40 /* HeaderEnterprisesRequestDTO.swift in Sources */,
 				4BE928E526C2CFAF00DBAFA7 /* DataCompletion.swift in Sources */,
 				4BE9290226C3167600DBAFA7 /* EnterprisesResponseDTO.swift in Sources */,
 				4B0B638B26BD79E800131553 /* AuthRepository.swift in Sources */,

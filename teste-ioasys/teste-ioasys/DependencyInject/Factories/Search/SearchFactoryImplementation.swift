@@ -27,4 +27,15 @@ class SearchFactoryImplementation: SearchFactory {
 
         return searchViewController
     }
+    
+    func makeDetailEnterpriseViewController() -> DetailEnterpriseViewController {
+        guard let detailEnterprisePresenter = resolver.resolve(DetailEnterpriseViewPresenting.self) as? DetailEnterprisePresenter else {
+            preconditionFailure("Cloudn't resolve DetailEnterpriseViewPresenting")
+        }
+
+        let detailEnterpriseViewController = DetailEnterpriseViewController(presenter: detailEnterprisePresenter)
+        detailEnterprisePresenter.attach(detailEnterpriseViewController)
+
+        return detailEnterpriseViewController
+    }
 }

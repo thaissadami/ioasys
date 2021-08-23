@@ -10,5 +10,5 @@ import Domain
 
 public protocol AuthRemoteDataSourceProtocol: Any {
 
-    func login(_ form: LoginForm, completion: @escaping DataCompletion<LoginResponse>)
+    func login(_ form: LoginForm, completion: @escaping ResultCompletion<LoginResponse>)
 }

@@ -21,7 +21,8 @@ public class AuthRemoteDataSource {
     
     private func handle(response: Response, completion: ResultCompletion<LoginResponse>) {
         let encodedResponse = response.response(encoding: .isoLatin1)
-        if let mappedResponse = try? encodedResponse.map(LoginResponse.self) {
+
+        if var mappedResponse = try? encodedResponse.map(LoginResponse.self) {
             
             if let httpResponse = response.response {
                 

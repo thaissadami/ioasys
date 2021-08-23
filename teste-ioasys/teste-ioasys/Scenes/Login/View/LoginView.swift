@@ -17,6 +17,8 @@ class LoginView: UIView, CodeView {
     weak var delegate: LoginViewDelegate?
     
     @objc func didTapLogin() {
+        tfEmail.resignFirstResponder()
+        tfPassword.resignFirstResponder()
         delegate?.didTapLogin(tfEmail.text!, password: tfPassword.text!)
     }
 

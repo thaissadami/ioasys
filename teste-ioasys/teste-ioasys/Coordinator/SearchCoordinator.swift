@@ -36,11 +36,17 @@ class SearchCoordinator: Coordinator {
         let searchViewController = searchFactory.makeSearchViewController()
         navigationController.pushViewController(searchViewController, animated: true)
     }
+    
+    public func showDetailEnterpriseScene(_ enterprise: Enterprise) {
+        let detailEnterpriseViewController = searchFactory.makeDetailEnterpriseViewController()
+        detailEnterpriseViewController.enterprise = enterprise
+        navigationController.pushViewController(detailEnterpriseViewController, animated: true)
+    }
 }
 
 extension SearchCoordinator: SearchSceneCoordinating {
     
     func showDetailEnterprise(_ enterprise: Enterprise) {
-        coordinatorDelegate?.didShowDetailEnterprise(enterprise)
+        showDetailEnterpriseScene(enterprise)
     }
 }

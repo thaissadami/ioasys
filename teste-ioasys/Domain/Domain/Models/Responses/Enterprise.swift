@@ -10,29 +10,30 @@ import Foundation
 public struct Enterprise {
 
     public let id: Int
-    public let enterpriseName, photo, facebook, twitter, description, linkedin, city, country, emailEnterprise, phone: String
+    public let enterpriseName, photo, description, city, country: String
+    public let facebook, twitter, linkedin, emailEnterprise, phone: String?
     public let value, sharePrice: Double
     public let ownEnterprise: Bool
-    public let enterpriseTypeName:EnterpriseType
+    public let enterpriseType:EnterpriseType
 
-    public init(id: Int, enterpriseName: String, photo: String, facebook: String,
-                twitter: String, description: String, linkedin: String, city: String,
-                country: String, emailEnterprise: String, phone: String, value: Double, sharePrice: Double, ownEnterprise: Bool, enterpriseTypeName: EnterpriseType) {
+    public init(id: Int, enterpriseName: String, photo: String, description: String, city: String, country: String, value: Double, sharePrice: Double, ownEnterprise: Bool,
+                facebook: String?, twitter: String?, linkedin: String?, emailEnterprise: String?, phone: String?,
+                enterpriseType: EnterpriseType) {
         self.id = id
         self.enterpriseName = enterpriseName
         self.photo = photo
         self.value = value
         self.ownEnterprise = ownEnterprise
-        self.enterpriseTypeName = enterpriseTypeName
-        self.facebook = facebook
-        self.twitter = twitter
+        self.enterpriseType = enterpriseType
         self.description = description
-        self.linkedin = linkedin
         self.city = city
         self.country = country
+        self.sharePrice = sharePrice
+        self.facebook = facebook
+        self.twitter = twitter
         self.emailEnterprise = emailEnterprise
         self.phone = phone
-        self.sharePrice = sharePrice
+        self.linkedin = linkedin
     }
 }
 
