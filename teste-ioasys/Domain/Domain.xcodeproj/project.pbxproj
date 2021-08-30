@@ -75,12 +75,8 @@
 		4BE928FA26C3126B00DBAFA7 /* Enterprise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enterprise.swift; sourceTree = "<group>"; };
 		4BE9291C26C41CC000DBAFA7 /* EnterprisesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterprisesRequest.swift; sourceTree = "<group>"; };
 		4BE9292026C420E100DBAFA7 /* Result+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Extension.swift"; sourceTree = "<group>"; };
-		7E79A4744DAF497A917594F5 /* Pods-Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release.xcconfig"; sourceTree = "<group>"; };
-		7EDD8E4545DC08047BFE0F85 /* Pods-Domain-DomainTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.debug.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9A579181268EC7A65D29559E /* Pods-Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug.xcconfig"; sourceTree = "<group>"; };
 		AA2686075E6E633EB5A7733D /* Pods_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EABFD073134411A4BB8BE064 /* Pods_Domain_DomainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domain_DomainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB12DD4F29D711C335B3DE4B /* Pods-Domain-DomainTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain-DomainTests.release.xcconfig"; path = "Target Support Files/Pods-Domain-DomainTests/Pods-Domain-DomainTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +106,6 @@
 				4B0B62BB26BC66BC00131553 /* Domain */,
 				4B0B62C626BC66BC00131553 /* DomainTests */,
 				4B0B62BA26BC66BC00131553 /* Products */,
-				D76DADBC820E501A7BD61404 /* Pods */,
 				D6DACF0E27971823F207D8FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -259,18 +254,6 @@
 				EABFD073134411A4BB8BE064 /* Pods_Domain_DomainTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D76DADBC820E501A7BD61404 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9A579181268EC7A65D29559E /* Pods-Domain.debug.xcconfig */,
-				7E79A4744DAF497A917594F5 /* Pods-Domain.release.xcconfig */,
-				7EDD8E4545DC08047BFE0F85 /* Pods-Domain-DomainTests.debug.xcconfig */,
-				EB12DD4F29D711C335B3DE4B /* Pods-Domain-DomainTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,7 +582,6 @@
 		};
 		4B0B62CE26BC66BC00131553 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A579181268EC7A65D29559E /* Pods-Domain.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,7 +610,6 @@
 		};
 		4B0B62CF26BC66BC00131553 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E79A4744DAF497A917594F5 /* Pods-Domain.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -656,7 +637,6 @@
 		};
 		4B0B62D126BC66BC00131553 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EDD8E4545DC08047BFE0F85 /* Pods-Domain-DomainTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -676,7 +656,6 @@
 		};
 		4B0B62D226BC66BC00131553 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB12DD4F29D711C335B3DE4B /* Pods-Domain-DomainTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

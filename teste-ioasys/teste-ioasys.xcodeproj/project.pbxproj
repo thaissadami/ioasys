@@ -113,8 +113,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasysTests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasysTests/Pods-teste-ioasysTests.debug.xcconfig"; sourceTree = "<group>"; };
 		10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B0B62AA26BB2F2F00131553 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		4B0B62AD26BB33C800131553 /* ResolverExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResolverExtension.swift; sourceTree = "<group>"; };
@@ -183,11 +181,7 @@
 		4BF2231526BAD76E00FCDAFD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		4BF2231826BAE03700FCDAFD /* ViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
 		562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasysTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig"; sourceTree = "<group>"; };
-		75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys.release.xcconfig"; sourceTree = "<group>"; };
-		A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasys/Pods-teste-ioasys.debug.xcconfig"; sourceTree = "<group>"; };
 		A889A56002803BF14B397FBF /* Pods_teste_ioasys_teste_ioasysUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasys_teste_ioasysUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasysTests.release.xcconfig"; path = "Target Support Files/Pods-teste-ioasysTests/Pods-teste-ioasysTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,7 +355,6 @@
 			children = (
 				4BF013DE2680D15400F2CB43 /* teste-ioasys */,
 				4BF013DD2680D15400F2CB43 /* Products */,
-				F3B9EF84721FB38A0175F01A /* Pods */,
 				EA9819CADD58148973638864 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -504,19 +497,6 @@
 				562CE4B00B9A55E157B5DF7D /* Pods_teste_ioasysTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F3B9EF84721FB38A0175F01A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */,
-				75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */,
-				03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */,
-				567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */,
-				05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */,
-				B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -975,7 +955,6 @@
 		};
 		4BF014072680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A23047DD22C03CD40F656ACA /* Pods-teste-ioasys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1005,7 +984,6 @@
 		};
 		4BF014082680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75D670E81C7A937F6FB1D64C /* Pods-teste-ioasys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1025,7 +1003,6 @@
 		};
 		4BF0140A2680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1048,7 +1025,6 @@
 		};
 		4BF0140B2680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B998DA1D989F2FCA4FCC0552 /* Pods-teste-ioasysTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1071,7 +1047,6 @@
 		};
 		4BF0140D2680D15B00F2CB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1092,7 +1067,6 @@
 		};
 		4BF0140E2680D15B00F2CB43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 567559FC39AE7C2FD186130C /* Pods-teste-ioasys-teste-ioasysUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
