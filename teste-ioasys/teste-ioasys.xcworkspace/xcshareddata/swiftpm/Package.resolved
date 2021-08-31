@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Request",
+        "repositoryURL": "git@bitbucket.org:ioasys/ioasys-networking-code-ios.git",
+        "state": {
+          "branch": null,
+          "revision": "61245b49c54e3dd97748e6fea1faf3e20f537f63",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

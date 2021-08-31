@@ -6,8 +6,9 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
+//import Alamofire
+//import SwiftyJSON
+import Request
 
 class LoginViewModel: NetworkAPI{
     
@@ -20,53 +21,57 @@ class LoginViewModel: NetworkAPI{
     func signIn(credential: Credential){
         
         if (validateFields()){
-            makeRequest(method: .post, url: Constants.URL.login, parameters: credential.toJSONDictionary())
+//            makeRequest(method: .post, url: Constants.URL.login, parameters: credential.toJSONDictionary())
+            let dict = ["email":"testeapple@ioasys.com.br", "password":"12341234"]
+            makeRequest(parameters: dict as NSDictionary, method: .post, url: "/sign_in") { response in
+                let success = "a"
+            }
         }
     }
     
-    override func successResult(response:AFDataResponse<Data>) {
+//    override func successResult(response:AFDataResponse<Data>) {
+////        do {
+////            let user = try JSONDecoder().decode(LoginResponse.self, from: response.data ?? Data())
+//
+//            if let headers = response.response?.allHeaderFields as? [String: String]{
+//                let accessToken = headers["access-token"]
+//                let client = headers["client"]
+//                let uid = headers["uid"]
+//
+//                StateManager.sharedManager.userLogged = true
+//                StateManager.sharedManager.accessToken = accessToken!
+//                StateManager.sharedManager.client = client!
+//                StateManager.sharedManager.uid = uid!
+//
+//                self.viewController.goToSearch()
+//            }
+////        } catch {
+////            print(error.localizedDescription)
+////        }
+//
+//        self.viewController.stopLoading()
+//    }
+//
+//    override func failure(error:AFDataResponse<Data>){
+//
 //        do {
-//            let user = try JSONDecoder().decode(LoginResponse.self, from: response.data ?? Data())
-            
-            if let headers = response.response?.allHeaderFields as? [String: String]{
-                let accessToken = headers["access-token"]
-                let client = headers["client"]
-                let uid = headers["uid"]
-                
-                StateManager.sharedManager.userLogged = true
-                StateManager.sharedManager.accessToken = accessToken!
-                StateManager.sharedManager.client = client!
-                StateManager.sharedManager.uid = uid!
-                
-                self.viewController.goToSearch()
-            }
+//            //SHOW MESSAGE FROM SERVER
+////            let errorResult = try JSONDecoder().decode(ErrorResult.self, from: error.data ?? Data())
+////            self.viewController.setFailure(errorMessage: errorResult.errors![0])
+//
+//            //TO BETTER EXPERIENCE TO USER AND ACCORDING LAYOUT
+//            let status = error.response?.statusCode
+//            if status == 401 {
+//                self.viewController.setFailure(errorMessage: "Credenciais incorretas")
+//            }
+//
+//
 //        } catch {
 //            print(error.localizedDescription)
 //        }
-        
-        self.viewController.stopLoading()
-    }
-    
-    override func failure(error:AFDataResponse<Data>){
-        
-        do {
-            //SHOW MESSAGE FROM SERVER
-//            let errorResult = try JSONDecoder().decode(ErrorResult.self, from: error.data ?? Data())
-//            self.viewController.setFailure(errorMessage: errorResult.errors![0])
-            
-            //TO BETTER EXPERIENCE TO USER AND ACCORDING LAYOUT
-            let status = error.response?.statusCode
-            if status == 401 {
-                self.viewController.setFailure(errorMessage: "Credenciais incorretas")
-            }
-            
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        self.viewController.stopLoading()
-    }
+//
+//        self.viewController.stopLoading()
+//    }
     
     func validateFields() -> Bool{
         

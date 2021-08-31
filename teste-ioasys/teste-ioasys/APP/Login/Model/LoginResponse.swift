@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LoginResponse: RequestModel {
+public class LoginResponse: RequestModel {
     let enterprise: String?
     var investor: Investor?
     var success: Bool?
@@ -27,7 +27,7 @@ class LoginResponse: RequestModel {
         try super.init(from: decoder)
     }
 
-    override func encode(to encoder: Encoder) throws {
+    public override func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encodeIfPresent(enterprise, forKey: .enterprise)
         try container.encodeIfPresent(investor, forKey: .investor)

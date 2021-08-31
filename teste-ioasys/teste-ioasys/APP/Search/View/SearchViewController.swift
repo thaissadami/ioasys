@@ -71,7 +71,7 @@ class SearchViewController: UIViewController {
     
     @objc func searchEnterprise(){
         startLoading()
-        searchViewModel!.getEnterprisesWithName(text: mainView.tfSearch.text ?? "")
+//        searchViewModel!.getEnterprisesWithName(text: mainView.tfSearch.text ?? "")
     }
     
     func setEnterprises(enterprises: [Enterprise]){

@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49727B0F594FBCC7D59DB34B /* Pods_teste_ioasys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */; };
+		4B06964F26DD6684006D7C24 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06964E26DD6684006D7C24 /* AccessToken.swift */; };
+		4B06965226DD66C3006D7C24 /* Request in Frameworks */ = {isa = PBXBuildFile; productRef = 4B06965126DD66C3006D7C24 /* Request */; };
+		4B06965426DE605E006D7C24 /* Url+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06965326DE605E006D7C24 /* Url+Extension.swift */; };
+		4B06965626DE60C8006D7C24 /* Headers+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06965526DE60C8006D7C24 /* Headers+Extension.swift */; };
+		4B06965826DEA467006D7C24 /* TestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B06965726DEA467006D7C24 /* TestResponse.swift */; };
 		4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56921B268266D4003473CB /* LoginViewModel.swift */; };
 		4B56923526829323003473CB /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56923426829323003473CB /* NetworkAPI.swift */; };
 		4B56924726829858003473CB /* Investor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B56924626829858003473CB /* Investor.swift */; };
@@ -75,6 +80,10 @@
 		03F21FB78E08DCF5AE49FEDB /* Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasys-teste-ioasysUITests/Pods-teste-ioasys-teste-ioasysUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		05A447BDD533C2A7B61CF11F /* Pods-teste-ioasysTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teste-ioasysTests.debug.xcconfig"; path = "Target Support Files/Pods-teste-ioasysTests/Pods-teste-ioasysTests.debug.xcconfig"; sourceTree = "<group>"; };
 		10EC33C3FB8A9508E7552FDC /* Pods_teste_ioasys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teste_ioasys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B06964E26DD6684006D7C24 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		4B06965326DE605E006D7C24 /* Url+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Url+Extension.swift"; sourceTree = "<group>"; };
+		4B06965526DE60C8006D7C24 /* Headers+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Headers+Extension.swift"; sourceTree = "<group>"; };
+		4B06965726DEA467006D7C24 /* TestResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResponse.swift; sourceTree = "<group>"; };
 		4B56921B268266D4003473CB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4B56923426829323003473CB /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
 		4B56924626829858003473CB /* Investor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Investor.swift; sourceTree = "<group>"; };
@@ -134,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B06965226DD66C3006D7C24 /* Request in Frameworks */,
 				49727B0F594FBCC7D59DB34B /* Pods_teste_ioasys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +192,10 @@
 				4BE34ADA26893A7B0095158F /* APIEnvironment.swift */,
 				4B56923426829323003473CB /* NetworkAPI.swift */,
 				4BE34B09268A39D30095158F /* ErrorResult.swift */,
+				4B06964E26DD6684006D7C24 /* AccessToken.swift */,
+				4B06965326DE605E006D7C24 /* Url+Extension.swift */,
+				4B06965526DE60C8006D7C24 /* Headers+Extension.swift */,
+				4B06965726DEA467006D7C24 /* TestResponse.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -428,6 +442,9 @@
 			dependencies = (
 			);
 			name = "teste-ioasys";
+			packageProductDependencies = (
+				4B06965126DD66C3006D7C24 /* Request */,
+			);
 			productName = "teste-ioasys";
 			productReference = 4BF013DC2680D15400F2CB43 /* teste-ioasys.app */;
 			productType = "com.apple.product-type.application";
@@ -502,6 +519,9 @@
 				Base,
 			);
 			mainGroup = 4BF013D32680D15400F2CB43;
+			packageReferences = (
+				4B06965026DD66C3006D7C24 /* XCRemoteSwiftPackageReference "ioasys-networking-code-ios" */,
+			);
 			productRefGroup = 4BF013DD2680D15400F2CB43 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -668,8 +688,10 @@
 				4BF014A726810A1F00F2CB43 /* LoginViewControllerDelegate.swift in Sources */,
 				4B95745B2688243B007A9517 /* DetailEnterpriseViewDelegate.swift in Sources */,
 				4BF014372680DC4B00F2CB43 /* LoginViewController.swift in Sources */,
+				4B06965626DE60C8006D7C24 /* Headers+Extension.swift in Sources */,
 				4B95740B2687EF67007A9517 /* ColorExtension.swift in Sources */,
 				4B9573B02687D5FA007A9517 /* SearchViewControllerDelegate.swift in Sources */,
+				4B06965826DEA467006D7C24 /* TestResponse.swift in Sources */,
 				4B95738C2687CF56007A9517 /* SearchViewController.swift in Sources */,
 				4B9573502684B822007A9517 /* StateManager.swift in Sources */,
 				4B56923526829323003473CB /* NetworkAPI.swift in Sources */,
@@ -680,6 +702,7 @@
 				4BF013E22680D15400F2CB43 /* SceneDelegate.swift in Sources */,
 				4B56921C268266D4003473CB /* LoginViewModel.swift in Sources */,
 				4BF014B126812ABE00F2CB43 /* CodeView.swift in Sources */,
+				4B06965426DE605E006D7C24 /* Url+Extension.swift in Sources */,
 				4B9573422683E376007A9517 /* ActivityIndicatorCustom.swift in Sources */,
 				4BE34ADB26893A7B0095158F /* APIEnvironment.swift in Sources */,
 				4B9574102687F844007A9517 /* SearchCell.swift in Sources */,
@@ -687,6 +710,7 @@
 				4B9574512688200A007A9517 /* DetailEnterpriseViewController.swift in Sources */,
 				4BE34AC326892D100095158F /* ImageCell.swift in Sources */,
 				4BE34B3B268A49E70095158F /* EnterpriseResponse.swift in Sources */,
+				4B06964F26DD6684006D7C24 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1025,6 +1049,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B06965026DD66C3006D7C24 /* XCRemoteSwiftPackageReference "ioasys-networking-code-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@bitbucket.org:ioasys/ioasys-networking-code-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B06965126DD66C3006D7C24 /* Request */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B06965026DD66C3006D7C24 /* XCRemoteSwiftPackageReference "ioasys-networking-code-ios" */;
+			productName = Request;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4BF013D42680D15400F2CB43 /* Project object */;
 }
